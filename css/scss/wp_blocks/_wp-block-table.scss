@@ -1,0 +1,77 @@
+.wp-block-table {
+	margin:0 0 1em;
+	overflow-x:auto;
+	background-color: $zand;
+	border: 1px solid $groen;
+	border-radius: 8px;
+	td, th {
+		padding-left: 1em;
+	}
+	th {
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+		font-size: 1.2em;
+	}
+
+
+}
+.wp-block-table table {
+	border-collapse:collapse;
+	width:100%
+}
+.wp-block-table .has-fixed-layout {
+	table-layout:fixed;
+	width:100%;
+}
+.wp-block-table .has-fixed-layout td,
+.wp-block-table .has-fixed-layout th {
+	word-break:break-word;
+}
+
+.wp-block-table.aligncenter,
+.wp-block-table.alignleft,
+.wp-block-table.alignright {
+	display:table;
+	width:auto;
+}
+.wp-block-table.aligncenter td,
+.wp-block-table.aligncenter th,
+.wp-block-table.alignleft td,
+.wp-block-table.alignleft th,
+.wp-block-table.alignright td,
+.wp-block-table.alignright th {
+	word-break:break-word;
+}
+
+.tabel-landingspagina-online {
+
+
+
+}
+
+
+.wp-block-table.tabel-landingspagina-online.sm {
+	display: table;
+}
+
+.wp-block-table.aligncenter.tabel-landingspagina-online.lg {
+	display: none;
+	th {
+	padding-left: 0;
+	vertical-align: bottom;
+
+	}
+	td {
+		min-width: 9em;
+	}
+}
+
+@media all and (min-width: 600px) {
+	.wp-block-table.tabel-landingspagina-online.sm {
+		display: none;
+	}
+	.wp-block-table.aligncenter.tabel-landingspagina-online.lg {
+		display: table;
+	}
+
+}

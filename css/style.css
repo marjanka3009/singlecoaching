@@ -1,0 +1,5844 @@
+/*------------------------------------*\
+    $TABLE OF CONTENTS 
+\*------------------------------------*/
+/**
+ * VARIABLES..............................Declarations of Sass variables 
+ * .....Colors
+ * .....Typography
+ * .....Layout
+ * .....Defaults
+ * .....Breakpoints
+ * MIXINS.................................Sass mixins 
+ * RESET..................................Set reset defaults
+ * GLOBAL CLASSES.........................Set reset defaults
+ * GLOBAL ELEMENTS........................Establish global styles
+ * .....Main
+ * .....Headings
+ * .....Text-related elements (p, blockquote, lists)
+ * .....Defaults
+ * .....Breakpoints
+ * TYPOGRAPHY------------------------------
+ * MEDIA------------------------------
+ * LAYOUT------------------------------
+ * NAVIGATION------------------------------
+ * TOC To Be Continued
+ */
+/*------------------------------------*\
+    $GENERIC ELEMENTS
+\*------------------------------------*/
+/*------------------------------------*\
+    $VARIABLES
+\*------------------------------------*/
+/*Colors*/
+/* custom */
+/* vanuit underscore */
+/******************/
+/*Typography*/
+/* line 106, ../../../../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
+/*Layout*/
+/*Defaults*/
+/*Borders*/
+/*Breakpoints*/
+/*underscore*/
+/*------------------------------------*\
+    $MIXINS
+\*------------------------------------*/
+/* CSS Transition
+	Usage: @include transition(width,0.3s,ease-out);
+ */
+/* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback  
+	Usage: @include font-size(1, large);
+*/
+/*underscore*/
+/*------------------------------------*\
+    $RESET
+\*------------------------------------*/
+/* Border-Box http:/paulirish.com/2012/box-sizing-border-box-ftw/ */
+/* line 6, ../../source/css/scss/generic/_reset.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 11, ../../source/css/scss/generic/_reset.scss */
+html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul, li, form, legend, label, table, header, footer, nav, section, figure {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 15, ../../source/css/scss/generic/_reset.scss */
+header, footer, nav, section, article, hgroup, figure {
+  display: block;
+}
+
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+	 ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+/* line 31, ../../source/css/scss/generic/_reset.scss */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+	 ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+/* line 43, ../../source/css/scss/generic/_reset.scss */
+body {
+  margin: 0;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 52, ../../source/css/scss/generic/_reset.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+	 ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 65, ../../source/css/scss/generic/_reset.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 76, ../../source/css/scss/generic/_reset.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+	 ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+/* line 88, ../../source/css/scss/generic/_reset.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 97, ../../source/css/scss/generic/_reset.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 107, ../../source/css/scss/generic/_reset.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 117, ../../source/css/scss/generic/_reset.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 128, ../../source/css/scss/generic/_reset.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 137, ../../source/css/scss/generic/_reset.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 145, ../../source/css/scss/generic/_reset.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 149, ../../source/css/scss/generic/_reset.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+	 ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+/* line 160, ../../source/css/scss/generic/_reset.scss */
+img {
+  border-style: none;
+}
+
+/* Forms
+	 ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 172, ../../source/css/scss/generic/_reset.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 188, ../../source/css/scss/generic/_reset.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 198, ../../source/css/scss/generic/_reset.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 207, ../../source/css/scss/generic/_reset.scss */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 218, ../../source/css/scss/generic/_reset.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 230, ../../source/css/scss/generic/_reset.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+/* line 241, ../../source/css/scss/generic/_reset.scss */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *		`fieldset` elements in all browsers.
+ */
+/* line 252, ../../source/css/scss/generic/_reset.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 265, ../../source/css/scss/generic/_reset.scss */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+/* line 273, ../../source/css/scss/generic/_reset.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+/* line 282, ../../source/css/scss/generic/_reset.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 292, ../../source/css/scss/generic/_reset.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 302, ../../source/css/scss/generic/_reset.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+/* line 311, ../../source/css/scss/generic/_reset.scss */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 320, ../../source/css/scss/generic/_reset.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+	 ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+/* line 332, ../../source/css/scss/generic/_reset.scss */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+/* line 340, ../../source/css/scss/generic/_reset.scss */
+summary {
+  display: list-item;
+}
+
+/* Misc
+	 ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+/* line 351, ../../source/css/scss/generic/_reset.scss */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+/* line 359, ../../source/css/scss/generic/_reset.scss */
+[hidden] {
+  display: none;
+}
+
+/*------------------------------------*\
+    $VOOR PATTERNLAB TESTDOELEINDEN - 
+    IN EINDVERSIE UNCOMMENTEN
+\*------------------------------------*/
+/*------------------------------------*\
+    $GLOBAL ELEMENTS
+\*------------------------------------*/
+/*------------------------------------*\
+    $GLOBAL CLASSES
+\*------------------------------------*/
+/* line 6, ../../source/css/scss/base/_global-classes.scss */
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+  content: "";
+  display: table;
+  table-layout: fixed;
+}
+
+/* line 21, ../../source/css/scss/base/_global-classes.scss */
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+  clear: both;
+}
+
+/* Clearfix */
+/* line 33, ../../source/css/scss/base/_global-classes.scss */
+.cf, .l-two-col, .site-content, .widget-area .widget, [role=main], .experience-container {
+  *zoom: 1;
+}
+
+/* line 36, ../../source/css/scss/base/_global-classes.scss */
+.cf:before, .l-two-col:before, .site-content:before, .widget-area .widget:before, [role=main]:before, .experience-container:before, .cf:after, .l-two-col:after, .site-content:after, .widget-area .widget:after, [role=main]:after, .experience-container:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 41, ../../source/css/scss/base/_global-classes.scss */
+.cf:after, .l-two-col:after, .site-content:after, .widget-area .widget:after, [role=main]:after, .experience-container:after {
+  clear: both;
+}
+
+/* Completely remove from the flow and screen readers. */
+/* line 46, ../../source/css/scss/base/_global-classes.scss */
+.is-hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* Completely remove from the flow but leave available to screen readers. */
+/* line 52, ../../source/css/scss/base/_global-classes.scss */
+.is-vishidden {
+  position: absolute !important;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* Floats */
+/* line 63, ../../source/css/scss/base/_global-classes.scss */
+.right {
+  float: right;
+  padding: 0 0 1em 1em;
+}
+
+/* line 68, ../../source/css/scss/base/_global-classes.scss */
+.right-search {
+  float: right;
+  padding: 0 0 1em 0;
+}
+
+/* line 73, ../../source/css/scss/base/_global-classes.scss */
+.left {
+  float: left;
+  padding: 0 1em 1em 0;
+}
+
+/* Text-Align */
+/* line 79, ../../source/css/scss/base/_global-classes.scss */
+.align-right {
+  text-align: right;
+}
+
+/* line 83, ../../source/css/scss/base/_global-classes.scss */
+.align-center {
+  text-align: center;
+}
+
+/* line 87, ../../source/css/scss/base/_global-classes.scss */
+.align-left {
+  text-align: left;
+}
+
+/* Display Classes */
+@media all and (max-width: 790px) {
+  /* line 92, ../../source/css/scss/base/_global-classes.scss */
+  .hide-small {
+    display: none;
+  }
+}
+
+@media all and (min-width: 790px) and (max-width: 994px) {
+  /* line 98, ../../source/css/scss/base/_global-classes.scss */
+  .hide-med {
+    display: none;
+  }
+}
+
+@media all and (min-width: 994px) {
+  /* line 104, ../../source/css/scss/base/_global-classes.scss */
+  .hide-large {
+    display: none;
+  }
+}
+
+/* line 111, ../../source/css/scss/base/_global-classes.scss */
+.valid {
+  color: #4D94DB;
+}
+
+/* line 115, ../../source/css/scss/base/_global-classes.scss */
+.error {
+  color: #666;
+}
+
+/* line 119, ../../source/css/scss/base/_global-classes.scss */
+.warning {
+  color: #666;
+}
+
+/* line 123, ../../source/css/scss/base/_global-classes.scss */
+.information {
+  color: #A0CE4E;
+}
+
+/* line 127, ../../source/css/scss/base/_global-classes.scss */
+.font-secondary {
+  font-family: "Lato", sans-serif;
+}
+
+/* line 134, ../../source/css/scss/base/_global-classes.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 138, ../../source/css/scss/base/_global-classes.scss */
+*,
+*:before,
+*:after {
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit;
+}
+
+/* line 144, ../../source/css/scss/base/_global-classes.scss */
+body {
+  background: #FFF4D4;
+  /* Fallback for when there is no custom background color defined. */
+}
+
+/* line 148, ../../source/css/scss/base/_global-classes.scss */
+hr {
+  background-color: #666;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em;
+}
+
+/* line 155, ../../source/css/scss/base/_global-classes.scss */
+img {
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */
+}
+
+/* line 160, ../../source/css/scss/base/_global-classes.scss */
+figure {
+  margin: 1em 0;
+  /* Extra wide images within figure tags don't overflow the content area. */
+}
+
+/* line 181, ../../source/css/scss/base/_global-classes.scss */
+.bg-gray {
+  background-color: #666;
+}
+
+/* line 182, ../../source/css/scss/base/_global-classes.scss */
+.bg-gray-light {
+  background-color: #fff;
+}
+
+/* line 183, ../../source/css/scss/base/_global-classes.scss */
+.bg-gray-dark {
+  background-color: #404040;
+}
+
+/* line 184, ../../source/css/scss/base/_global-classes.scss */
+.bg-blue {
+  background-color: #A0CE4E;
+}
+
+/* line 185, ../../source/css/scss/base/_global-classes.scss */
+.bg-blue-medium {
+  background-color: #4D94DB;
+}
+
+/* line 186, ../../source/css/scss/base/_global-classes.scss */
+.bg-blue-light {
+  background-color: #dfefc3;
+}
+
+/* line 187, ../../source/css/scss/base/_global-classes.scss */
+.bg-magenta {
+  background-color: #666;
+}
+
+/* line 189, ../../source/css/scss/base/_global-classes.scss */
+.cl-error {
+  color: #666;
+}
+
+/* line 190, ../../source/css/scss/base/_global-classes.scss */
+.cl-valid {
+  color: #4D94DB;
+}
+
+/* line 191, ../../source/css/scss/base/_global-classes.scss */
+.cl-warning {
+  color: #666;
+}
+
+/* line 192, ../../source/css/scss/base/_global-classes.scss */
+.cl-information {
+  color: #A0CE4E;
+}
+
+/* line 194, ../../source/css/scss/base/_global-classes.scss */
+.is-bg-white {
+  background-color: #fff;
+}
+
+/* line 196, ../../source/css/scss/base/_global-classes.scss */
+.margin-top {
+  margin-top: 1em;
+}
+
+/* line 199, ../../source/css/scss/base/_global-classes.scss */
+.margin-top-double {
+  margin-top: 2em;
+}
+
+/* line 202, ../../source/css/scss/base/_global-classes.scss */
+.no-margin-top {
+  margin-top: -1em;
+}
+
+/* line 1, ../../source/css/scss/base/_main.scss */
+body {
+  background: #fff;
+  font: 100%/1.5 "Open Sans", sans-serif;
+  -webkit-text-size-adjust: 100%;
+  color: #404040;
+}
+
+/* line 1, ../../source/css/scss/base/_links.scss */
+a {
+  color: #666;
+}
+/* line 4, ../../source/css/scss/base/_links.scss */
+a:visited {
+  color: #666;
+}
+/* line 7, ../../source/css/scss/base/_links.scss */
+a:hover, a:focus, a:active {
+  color: #A0CE4E;
+}
+/* line 12, ../../source/css/scss/base/_links.scss */
+a:focus {
+  outline: thin dotted;
+}
+/* line 15, ../../source/css/scss/base/_links.scss */
+a:hover, a:active {
+  outline: 0;
+}
+
+/* Headings */
+/* line 2, ../../source/css/scss/base/_headings.scss */
+h1, h2, h3, h4, h5, h6, h1.entry-title {
+  font-family: "Lato", sans-serif;
+  color: #333;
+  font-weight: 400;
+}
+
+/* line 10, ../../source/css/scss/base/_headings.scss */
+article h1.entry-title, h1, .alpha {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 36px;
+  line-height: 2.25rem;
+  line-height: 1.2;
+  margin-top: -0.5em;
+}
+
+/* line 19, ../../source/css/scss/base/_headings.scss */
+.widget-area .widget:first-child h2 {
+  margin-top: -8px;
+}
+
+/* line 23, ../../source/css/scss/base/_headings.scss */
+h2, .beta {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+  margin-bottom: 0.5em;
+}
+
+/* line 29, ../../source/css/scss/base/_headings.scss */
+h3, .gamma {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+}
+
+/* line 32, ../../source/css/scss/base/_headings.scss */
+h4, .delta {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+}
+
+/* line 36, ../../source/css/scss/base/_headings.scss */
+h5, .epsilon {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+}
+
+/* line 40, ../../source/css/scss/base/_headings.scss */
+h6, .zeta {
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+}
+
+/* Subheadings */
+/* line 45, ../../source/css/scss/base/_headings.scss */
+.subheading {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+}
+
+/* Text-Related Elements */
+/* line 2, ../../source/css/scss/base/_text.scss */
+p {
+  margin-bottom: 1em;
+}
+
+/* Blockquote */
+/* line 7, ../../source/css/scss/base/_text.scss */
+blockquote, .wp-block-quote {
+  font-style: italic;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+/* line 11, ../../source/css/scss/base/_text.scss */
+blockquote p, .wp-block-quote p {
+  margin: -0.5em 0;
+}
+
+/* Horizontal Rule */
+/* line 26, ../../source/css/scss/base/_text.scss */
+hr {
+  border: 0;
+  height: 2px;
+  background: #A0CE4E;
+  margin: 2em 0;
+}
+
+/* line 33, ../../source/css/scss/base/_text.scss */
+abbr {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+}
+
+/* line 41, ../../source/css/scss/base/_text.scss */
+dfn, cite, em, i {
+  font-style: italic;
+}
+
+/* line 46, ../../source/css/scss/base/_text.scss */
+address {
+  margin: 0 0 1.5em;
+}
+
+/* line 50, ../../source/css/scss/base/_text.scss */
+pre {
+  background: #fff;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1.6em;
+}
+
+/* line 61, ../../source/css/scss/base/_text.scss */
+code, kbd, tt, var {
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-size: 15px;
+  font-size: 0.9375rem;
+}
+
+/* line 66, ../../source/css/scss/base/_text.scss */
+abbr, acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+}
+
+/* line 71, ../../source/css/scss/base/_text.scss */
+mark, ins {
+  background: #dfefc3;
+  text-decoration: none;
+}
+
+/* line 76, ../../source/css/scss/base/_text.scss */
+big {
+  font-size: 125%;
+}
+
+/* line 81, ../../source/css/scss/base/_text.scss */
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+  color: #666;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* line 1, ../../source/css/scss/base/_lists.scss */
+dl {
+  overflow: hidden;
+  margin: 0 0 1em;
+}
+
+/* line 6, ../../source/css/scss/base/_lists.scss */
+dt {
+  font-weight: bold;
+}
+
+/* line 10, ../../source/css/scss/base/_lists.scss */
+dd {
+  margin-left: 0;
+}
+
+/* underscore */
+/* line 16, ../../source/css/scss/base/_lists.scss */
+ul, ol {
+  margin: 0 0 1em 1.5em;
+  padding: 0;
+}
+
+/* line 21, ../../source/css/scss/base/_lists.scss */
+ul {
+  list-style: disc;
+}
+
+/* line 24, ../../source/css/scss/base/_lists.scss */
+ol {
+  list-style: decimal;
+}
+
+/* line 28, ../../source/css/scss/base/_lists.scss */
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 1em;
+}
+
+/*------------------------------------*\
+    $MEDIA ELEMENTS
+\*------------------------------------*/
+/* Flexible Media */
+/* line 6, ../../source/css/scss/base/_media.scss */
+img, video, object {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 11, ../../source/css/scss/base/_media.scss */
+iframe {
+  margin-bottom: 1em;
+}
+
+/* line 15, ../../source/css/scss/base/_media.scss */
+figure {
+  margin-bottom: 1em;
+}
+/* line 17, ../../source/css/scss/base/_media.scss */
+figure img {
+  margin-bottom: 0.5em;
+}
+
+/* line 21, ../../source/css/scss/base/_media.scss */
+figcaption {
+  font-style: italic;
+}
+
+/* line 27, ../../source/css/scss/base/_media.scss */
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+/* line 37, ../../source/css/scss/base/_media.scss */
+embed,
+iframe,
+object {
+  max-width: 100%;
+}
+
+/* Make sure logo link wraps around logo image. */
+/* line 44, ../../source/css/scss/base/_media.scss */
+.custom-logo-link {
+  display: inline-block;
+}
+
+/* line 49, ../../source/css/scss/base/_media.scss */
+.wp-caption {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+}
+/* line 53, ../../source/css/scss/base/_media.scss */
+.wp-caption img[class*="wp-image-"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 57, ../../source/css/scss/base/_media.scss */
+.wp-caption .wp-caption-text {
+  margin: 0.8075em 0;
+}
+
+/* line 62, ../../source/css/scss/base/_media.scss */
+.wp-caption-text {
+  text-align: center;
+}
+
+/* line 67, ../../source/css/scss/base/_media.scss */
+.gallery {
+  margin-bottom: 1.5em;
+}
+
+/* line 71, ../../source/css/scss/base/_media.scss */
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 100%;
+}
+/* line 79, ../../source/css/scss/base/_media.scss */
+.gallery-columns-2 .gallery-item {
+  max-width: 50%;
+}
+/* line 79, ../../source/css/scss/base/_media.scss */
+.gallery-columns-3 .gallery-item {
+  max-width: 33.33%;
+}
+/* line 79, ../../source/css/scss/base/_media.scss */
+.gallery-columns-4 .gallery-item {
+  max-width: 25%;
+}
+/* line 79, ../../source/css/scss/base/_media.scss */
+.gallery-columns-5 .gallery-item {
+  max-width: 20%;
+}
+/* line 79, ../../source/css/scss/base/_media.scss */
+.gallery-columns-6 .gallery-item {
+  max-width: 16.66%;
+}
+/* line 79, ../../source/css/scss/base/_media.scss */
+.gallery-columns-7 .gallery-item {
+  max-width: 14.28%;
+}
+/* line 79, ../../source/css/scss/base/_media.scss */
+.gallery-columns-8 .gallery-item {
+  max-width: 12.5%;
+}
+/* line 79, ../../source/css/scss/base/_media.scss */
+.gallery-columns-9 .gallery-item {
+  max-width: 11.11%;
+}
+
+/* line 85, ../../source/css/scss/base/_media.scss */
+.gallery-caption {
+  display: block;
+}
+
+/*------------------------------------*\
+    $FORMS
+\*------------------------------------*/
+/* line 4, ../../source/css/scss/base/_forms.scss */
+form ol, form ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+/* line 9, ../../source/css/scss/base/_forms.scss */
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 15, ../../source/css/scss/base/_forms.scss */
+label {
+  display: block;
+  padding-bottom: 0.5em;
+}
+
+/* line 20, ../../source/css/scss/base/_forms.scss */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0 1px 0;
+}
+
+/* line 26, ../../source/css/scss/base/_forms.scss */
+input, textarea {
+  width: 100%;
+  border: 1px solid #666;
+  padding: 0.5em 0.65rem;
+}
+
+/* line 32, ../../source/css/scss/base/_forms.scss */
+input[type=text], input[type=search], input[type=url], input[type=number], textarea {
+  -webkit-appearance: none;
+}
+
+/* line 36, ../../source/css/scss/base/_forms.scss */
+button, input[type="submit"] {
+  padding: 0.5em;
+  background: #404040;
+  border: 1px solid #666;
+  cursor: pointer;
+}
+
+/* line 43, ../../source/css/scss/base/_forms.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+  margin-right: 0.3em;
+}
+
+/* line 49, ../../source/css/scss/base/_forms.scss */
+input[type="search"] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+/* line 54, ../../source/css/scss/base/_forms.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 60, ../../source/css/scss/base/_forms.scss */
+.field-container {
+  margin-bottom: 1em;
+}
+
+/* line 65, ../../source/css/scss/base/_forms.scss */
+.inline-form fieldset, .inline-form .inline-container {
+  position: relative;
+}
+/* line 69, ../../source/css/scss/base/_forms.scss */
+.inline-form input[type=submit], .inline-form button, .inline-form .btn {
+  font-size: 0.875em;
+  padding: 0.65rem 1.3rem;
+  background: #404040;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: auto;
+}
+/* line 79, ../../source/css/scss/base/_forms.scss */
+.inline-form input[type=submit]:hover, .inline-form input[type=submit]:focus, .inline-form button:hover, .inline-form button:focus, .inline-form .btn:hover, .inline-form .btn:focus {
+  background: #666;
+  color: #fff;
+}
+
+/* Validation */
+/* line 87, ../../source/css/scss/base/_forms.scss */
+.has-error {
+  border-color: #666;
+}
+
+/* line 90, ../../source/css/scss/base/_forms.scss */
+.is-valid {
+  border-color: #4D94DB;
+}
+
+/*------------------------------------*\
+    $SPECIFIC FORMS
+\*------------------------------------*/
+/* Search Form */
+/* line 102, ../../source/css/scss/base/_forms.scss */
+.search-field {
+  padding-right: 3em;
+}
+
+/* line 105, ../../source/css/scss/base/_forms.scss */
+.inline-form .search-submit {
+  background: none;
+  padding: 0.78em 1em;
+  border: 0;
+  border-left: 1px solid #666;
+  color: #666;
+}
+
+/* line 116, ../../source/css/scss/base/_forms.scss */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 3px;
+}
+/* line 137, ../../source/css/scss/base/_forms.scss */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+  color: #111;
+}
+
+/* line 142, ../../source/css/scss/base/_forms.scss */
+select {
+  border: 1px solid #ccc;
+}
+
+/* line 146, ../../source/css/scss/base/_forms.scss */
+textarea {
+  width: 100%;
+}
+
+/*------------------------------------*\
+    $Table
+\*------------------------------------*/
+/* line 4, ../../source/css/scss/base/_tables.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid transparent;
+  width: 100%;
+}
+
+/* line 10, ../../source/css/scss/base/_tables.scss */
+th {
+  text-align: left;
+  border: 1px solid transparent;
+  padding: 0.2em;
+}
+
+/* line 15, ../../source/css/scss/base/_tables.scss */
+td {
+  border: 1px solid transparent;
+  padding: 0.2em;
+}
+
+/* line 20, ../../source/css/scss/base/_tables.scss */
+table.table-noborders {
+  width: 50%;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+
+/* line 26, ../../source/css/scss/base/_tables.scss */
+table.table-noborders td {
+  border: 1px solid transparent;
+}
+
+/* line 1, ../../source/css/scss/base/_animation.scss */
+.animate-fade {
+  -webkit-transition: opacity 0.3s ease-out;
+  -moz-transition: opacity 0.3s ease-out;
+  -ms-transition: opacity 0.3s ease-out;
+  -o-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
+}
+/* line 4, ../../source/css/scss/base/_animation.scss */
+.animate-fade:hover {
+  opacity: 0;
+}
+
+/* Text meant only for screen readers. */
+/* line 2, ../../source/css/scss/base/_accessibility.scss */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+  /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+/* line 14, ../../source/css/scss/base/_accessibility.scss */
+.screen-reader-text:focus {
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  clip-path: none;
+  color: #666;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+/* line 36, ../../source/css/scss/base/_accessibility.scss */
+#content[tabindex="-1"]:focus {
+  outline: 0;
+}
+
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+/* line 2, ../../source/css/scss/base/_infinite-scroll.scss */
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+  /* Theme Footer (when set to scrolling) */
+  display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+/* line 8, ../../source/css/scss/base/_infinite-scroll.scss */
+.infinity-end.neverending .site-footer {
+  display: block;
+}
+
+/*------------------------------------*\
+    $LAYOUT
+\*------------------------------------*/
+/*------------------------------------*\
+    $LAYOUT
+\*------------------------------------*/
+/* Layout Container */
+/* line 6, ../../source/css/scss/objects/_layout.scss */
+.lc, .content-area-nosidebar, [role=main] {
+  max-width: 72em;
+  margin: 0 auto;
+  padding: 0.5em;
+}
+
+/*------------------------------------*\
+    $TEMPLATES
+\*------------------------------------*/
+/* Two Column Layout */
+/* line 20, ../../source/css/scss/objects/_layout.scss */
+.l-two-col .l-main, .site-content .l-main, .l-two-col .content-area, .site-content .content-area {
+  width: 100%;
+}
+@media all and (min-width: 790px) {
+  /* line 20, ../../source/css/scss/objects/_layout.scss */
+  .l-two-col .l-main, .site-content .l-main, .l-two-col .content-area, .site-content .content-area {
+    float: left;
+    width: 70%;
+    margin-top: 2.5em;
+  }
+}
+/* line 31, ../../source/css/scss/objects/_layout.scss */
+.l-two-col .l-sidebar, .site-content .l-sidebar, .l-two-col .widget-area, .site-content .widget-area {
+  width: 100%;
+}
+@media all and (max-width: 790px) {
+  /* line 31, ../../source/css/scss/objects/_layout.scss */
+  .l-two-col .l-sidebar, .site-content .l-sidebar, .l-two-col .widget-area, .site-content .widget-area {
+    clear: both;
+  }
+}
+@media all and (min-width: 790px) {
+  /* line 31, ../../source/css/scss/objects/_layout.scss */
+  .l-two-col .l-sidebar, .site-content .l-sidebar, .l-two-col .widget-area, .site-content .widget-area {
+    float: left;
+    width: 30%;
+    padding: 0 0 0 1em;
+    margin-top: 2.5em;
+  }
+}
+
+/* line 137, ../../source/css/scss/objects/_layout.scss */
+body.page {
+  background-image: url("../images/homepage.jpg");
+  background-repeat: no-repeat;
+  background-color: #FFF4D4;
+  margin: 0;
+}
+
+/* line 143, ../../source/css/scss/objects/_layout.scss */
+.wrapper {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* line 152, ../../source/css/scss/objects/_layout.scss */
+.site-content {
+  background-color: #fff;
+}
+
+/* line 159, ../../source/css/scss/objects/_layout.scss */
+.content-area {
+  padding-right: 1em;
+  padding-left: 1.5em;
+}
+
+/* line 175, ../../source/css/scss/objects/_layout.scss */
+.widget-area .widget {
+  padding-left: 1em;
+  padding-right: 1.5em;
+}
+
+/*------------------------------------*\
+    $PAGE STRUCTURE
+\*------------------------------------*/
+/* line 5, ../../source/css/scss/objects/_header.scss */
+.site-header {
+  position: fixed;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1100px;
+  height: 110px;
+  background: #fff;
+  z-index: 999;
+  -webkit-box-shadow: 0px -6px 26px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px -6px 26px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px -6px 26px 0px rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width: 677px) {
+  /* line 5, ../../source/css/scss/objects/_header.scss */
+  .site-header {
+    max-height: 90px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+}
+
+/* line 23, ../../source/css/scss/objects/_header.scss */
+.site-header-content {
+  position: relative;
+  width: 100%;
+}
+
+/* line 29, ../../source/css/scss/objects/_header.scss */
+.site-logo {
+  display: block;
+  float: left;
+  margin: 12px 1.5em;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 38, ../../source/css/scss/objects/_header.scss */
+.custom-logo {
+  display: inline-block;
+  float: left;
+  max-width: 7.8rem;
+}
+@media all and (max-width: 677px) {
+  /* line 38, ../../source/css/scss/objects/_header.scss */
+  .custom-logo {
+    max-width: 5rem;
+  }
+}
+
+/* line 57, ../../source/css/scss/objects/_header.scss */
+.search-form {
+  overflow: hidden;
+  max-height: 0;
+}
+@media all and (min-width: 790px) {
+  /* line 57, ../../source/css/scss/objects/_header.scss */
+  .search-form {
+    float: right;
+    max-height: none;
+    margin: 0.65em 0.5em 0 0;
+  }
+}
+
+/*------------------------------------*\
+    $NAVIGATION
+\*------------------------------------*/
+/* line 5, ../../source/css/scss/objects/_nav.scss */
+.main-navigation {
+  clear: both;
+  display: block;
+  float: left;
+  margin-top: 40px;
+  margin-left: 160px;
+  font-size: 96%;
+}
+@media screen and (max-width: 677px) {
+  /* line 5, ../../source/css/scss/objects/_nav.scss */
+  .main-navigation {
+    margin-top: 30px;
+    margin-left: 0;
+    float: right;
+    font-size: 100%;
+  }
+  /* line 18, ../../source/css/scss/objects/_nav.scss */
+  .main-navigation .menu-toggle {
+    float: right;
+    margin-right: 20px;
+    padding: 1em;
+  }
+}
+/* line 29, ../../source/css/scss/objects/_nav.scss */
+.main-navigation ul {
+  display: none;
+  list-style: none;
+  margin: 0;
+}
+@media screen and (max-width: 677px) {
+  /* line 29, ../../source/css/scss/objects/_nav.scss */
+  .main-navigation ul {
+    margin-top: 50px;
+  }
+}
+/* line 41, ../../source/css/scss/objects/_nav.scss */
+.main-navigation li {
+  float: left;
+  position: relative;
+}
+@media screen and (max-width: 677px) {
+  /* line 41, ../../source/css/scss/objects/_nav.scss */
+  .main-navigation li {
+    padding-left: 10px;
+    padding-right: 15px;
+    width: 100%;
+    background: #f4faeb;
+  }
+  /* line 49, ../../source/css/scss/objects/_nav.scss */
+  .main-navigation li:last-child {
+    padding-bottom: 10px;
+  }
+}
+/* line 57, ../../source/css/scss/objects/_nav.scss */
+.main-navigation li:hover > a, .main-navigation li.focus > a {
+  background-image: url("../images/background_nav_a.jpg");
+  background-repeat: repeat-x;
+}
+@media screen and (max-width: 677px) {
+  /* line 57, ../../source/css/scss/objects/_nav.scss */
+  .main-navigation li:hover > a, .main-navigation li.focus > a {
+    background: #dfefc3;
+    color: #333;
+  }
+}
+/* line 68, ../../source/css/scss/objects/_nav.scss */
+.main-navigation a {
+  display: block;
+  text-decoration: none;
+  padding: 12px 16px 6px;
+}
+/* line 75, ../../source/css/scss/objects/_nav.scss */
+.main-navigation .current_page_item > a,
+.main-navigation .current-menu-item > a,
+.main-navigation .current_page_ancestor > a,
+.main-navigation .current-menu-ancestor > a {
+  background-image: url("../images/background_nav_a.jpg");
+  background-repeat: repeat-x;
+  color: #333;
+}
+
+/* Small menu. */
+/* line 86, ../../source/css/scss/objects/_nav.scss */
+.menu-toggle,
+.main-navigation.toggled ul {
+  display: block;
+}
+
+@media screen and (min-width: 677px) {
+  /* line 94, ../../source/css/scss/objects/_nav.scss */
+  .menu-toggle {
+    display: none;
+  }
+
+  /* line 97, ../../source/css/scss/objects/_nav.scss */
+  .main-navigation ul {
+    display: block;
+  }
+}
+/*------------------------------------*\
+    $MAIN CONTENT AREA
+\*------------------------------------*/
+/* line 4, ../../source/css/scss/objects/_main.scss */
+[role=main] {
+  overflow: hidden;
+}
+
+/*------------------------------------*\
+    $FOOTER
+\*------------------------------------*/
+/* line 4, ../../source/css/scss/objects/_footer.scss */
+.site-footer {
+  clear: both;
+  color: #fff;
+  padding: 1.5em 1.5em 0;
+}
+/* line 9, ../../source/css/scss/objects/_footer.scss */
+.site-footer a {
+  color: #fff;
+}
+
+/* line 17, ../../source/css/scss/objects/_footer.scss */
+.nav-footer {
+  margin: -1em -1em 1em;
+}
+/* line 20, ../../source/css/scss/objects/_footer.scss */
+.nav-footer li {
+  border-bottom: 1px solid #404040;
+}
+@media all and (min-width: 790px) {
+  /* line 20, ../../source/css/scss/objects/_footer.scss */
+  .nav-footer li {
+    border: 0;
+    float: left;
+  }
+}
+/* line 29, ../../source/css/scss/objects/_footer.scss */
+.nav-footer a {
+  display: block;
+  padding: 1em;
+}
+
+@media all and (min-width: 790px) {
+  /* line 35, ../../source/css/scss/objects/_footer.scss */
+  .copyright {
+    float: right;
+  }
+}
+
+/* line 1, ../../source/css/scss/objects/_widgets.scss */
+.widget {
+  margin: 0 0 1.5em;
+  /* Make sure select elements fit in widgets. */
+}
+/* line 4, ../../source/css/scss/objects/_widgets.scss */
+.widget select {
+  max-width: 100%;
+}
+
+/* line 8, ../../source/css/scss/objects/_widgets.scss */
+img.contact-foto {
+  width: 30%;
+}
+
+/* line 11, ../../source/css/scss/objects/_widgets.scss */
+ul.social-media-icons {
+  list-style-type: none;
+  margin-left: 0;
+}
+/* line 14, ../../source/css/scss/objects/_widgets.scss */
+ul.social-media-icons li {
+  display: inline;
+}
+/* line 16, ../../source/css/scss/objects/_widgets.scss */
+ul.social-media-icons li img {
+  width: 15%;
+  max-width: 10em;
+}
+
+/* line 24, ../../source/css/scss/objects/_widgets.scss */
+hr, .widget:after {
+  content: '';
+  display: table;
+  margin: 2em auto 1em;
+  width: 100%;
+  height: 2px;
+  overflow: visible;
+  border: none;
+  background: 0 0;
+  background: -webkit-linear-gradient(left, rgba(150, 150, 150, 0) 0, rgba(150, 150, 150, 0) 15%, rgba(150, 150, 150, 0.65) 50%, rgba(150, 150, 150, 0) 85%, rgba(150, 150, 150, 0) 100%);
+  background: linear-gradient(to right, rgba(150, 150, 150, 0) 0%, rgba(150, 150, 150, 0) 15%, rgba(150, 150, 150, 0.65) 50%, rgba(150, 150, 150, 0) 85%, rgba(150, 150, 150, 0) 100%);
+}
+
+/*.tribe-events-event-image {
+    margin: 0;
+        margin-right: 0px;
+        margin-left: 0px;
+    text-align: left;
+    float: left;
+    max-width: 50px;
+    margin-right: 10px;
+    margin-left: -30px;
+    }
+    */
+/* line 49, ../../source/css/scss/objects/_widgets.scss */
+.alignsidebar {
+  margin: 1em auto;
+  display: block;
+}
+
+/* line 1, ../../source/css/scss/objects/_posts-and-pages.scss */
+.sticky {
+  display: block;
+}
+
+/* line 5, ../../source/css/scss/objects/_posts-and-pages.scss */
+.post,
+.page {
+  margin: 0 0 1.5em;
+}
+
+/* line 10, ../../source/css/scss/objects/_posts-and-pages.scss */
+.updated:not(.published) {
+  display: none;
+}
+
+/* line 14, ../../source/css/scss/objects/_posts-and-pages.scss */
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: 1.5em 0 0;
+}
+
+/* line 20, ../../source/css/scss/objects/_posts-and-pages.scss */
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em;
+}
+
+/* line 25, ../../source/css/scss/objects/_posts-and-pages.scss */
+.indepers {
+  background: url() center/contain no-repeat;
+  height: 90px;
+  width: 90%;
+  margin: 0 auto 0 0;
+}
+
+/*------------------------------------*\
+    $TEXT Styles
+\*------------------------------------*/
+/* line 2, ../../source/css/scss/objects/_text.scss */
+.intro {
+  font-size: 1.0625em;
+  font-weight: bold;
+}
+
+/* line 8, ../../source/css/scss/objects/_text.scss */
+.pullquote {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4375em;
+}
+
+/* line 14, ../../source/css/scss/objects/_text.scss */
+.caption {
+  font-style: italic;
+}
+
+/* line 18, ../../source/css/scss/objects/_text.scss */
+.roze {
+  color: #FF3964;
+}
+
+/*------------------------------------*\
+    $COMPONENTS
+\*------------------------------------*/
+/* Icon Font */
+@font-face {
+  font-family: 'icons';
+  src: url("../fonts/icons.eot");
+  src: url("../fonts/icons.eot?#iefix") format("embedded-opentype"), url("../fonts/icons.woff") format("woff"), url("../fonts/icons.ttf") format("truetype"), url("../fonts/icons.svg#icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+/* line 15, ../../source/css/scss/objects/_icons.scss */
+[data-icon]:before {
+  font-family: 'icons';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 24, ../../source/css/scss/objects/_icons.scss */
+.icon-twitter:before, .icon-stumbleupon:before, .icon-pinterest:before, .icon-linkedin:before, .icon-google-plus:before, .icon-search:before, .icon-play:before, .icon-menu:before, .icon-arrow-left:before, .icon-arrow-right:before, .icon-bubble:before, .icon-facebook:before, .icon-feed:before, .icon-youtube:before, .icon-tag:before, .icon-tumblr:before, .icon-instagram, .icon-podcast, .icon-apple, .icon-android, .icon-arrow:after, .icon-envelope:before {
+  font-family: 'icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 34, ../../source/css/scss/objects/_icons.scss */
+.icon-twitter:before {
+  content: "\74";
+}
+
+/* line 37, ../../source/css/scss/objects/_icons.scss */
+.icon-stumbleupon:before {
+  content: "\75";
+}
+
+/* line 40, ../../source/css/scss/objects/_icons.scss */
+.icon-pinterest:before {
+  content: "\70";
+}
+
+/* line 43, ../../source/css/scss/objects/_icons.scss */
+.icon-linkedin:before {
+  content: "\69";
+}
+
+/* line 46, ../../source/css/scss/objects/_icons.scss */
+.icon-google-plus:before {
+  content: "\67";
+}
+
+/* line 49, ../../source/css/scss/objects/_icons.scss */
+.icon-search:before {
+  content: "\73";
+}
+
+/* line 52, ../../source/css/scss/objects/_icons.scss */
+.icon-play:before {
+  content: "\61";
+}
+
+/* line 55, ../../source/css/scss/objects/_icons.scss */
+.icon-menu:before {
+  content: "\21";
+}
+
+/* line 58, ../../source/css/scss/objects/_icons.scss */
+.icon-arrow-left:before {
+  content: "\23";
+}
+
+/* line 61, ../../source/css/scss/objects/_icons.scss */
+.icon-arrow-right:before {
+  content: "\24";
+}
+
+/* line 64, ../../source/css/scss/objects/_icons.scss */
+.icon-bubble:before {
+  content: "\25";
+}
+
+/* line 67, ../../source/css/scss/objects/_icons.scss */
+.icon-facebook:before {
+  content: "\66";
+}
+
+/* line 70, ../../source/css/scss/objects/_icons.scss */
+.icon-feed:before {
+  content: "\27";
+}
+
+/* line 73, ../../source/css/scss/objects/_icons.scss */
+.icon-youtube:before {
+  content: "\79";
+}
+
+/* line 76, ../../source/css/scss/objects/_icons.scss */
+.icon-tag:before {
+  content: "\28";
+}
+
+/* line 79, ../../source/css/scss/objects/_icons.scss */
+.icon-tumblr:before {
+  content: "\6d";
+}
+
+/* line 82, ../../source/css/scss/objects/_icons.scss */
+.icon-instagram:before {
+  content: "\22";
+}
+
+/* line 85, ../../source/css/scss/objects/_icons.scss */
+.icon-podcast:before {
+  content: "\26";
+}
+
+/* line 88, ../../source/css/scss/objects/_icons.scss */
+.icon-android:before {
+  content: "\29";
+}
+
+/* line 91, ../../source/css/scss/objects/_icons.scss */
+.icon-apple:before {
+  content: "\2a";
+}
+
+/* line 94, ../../source/css/scss/objects/_icons.scss */
+.icon-envelope:before {
+  content: "\2b";
+}
+
+/* line 99, ../../source/css/scss/objects/_icons.scss */
+.icon-arrow:after {
+  content: "\61";
+  display: inline-block;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 109, ../../source/css/scss/objects/_icons.scss */
+.icon-play:before {
+  font-size: 0.7rem;
+  padding-left: 0.2em;
+}
+
+/* line 114, ../../source/css/scss/objects/_icons.scss */
+.icon-play-box {
+  display: block;
+  margin-left: 2em;
+}
+
+/* line 119, ../../source/css/scss/objects/_icons.scss */
+.icon-play-box:before {
+  padding: 0.25em;
+  background: #666;
+  color: #fff;
+  margin-left: -1.7rem;
+  margin-right: 0.5em;
+}
+
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
+/* line 6, ../../source/css/scss/objects/_buttons.scss */
+.btn, .wp-block-button__link, .wp-block-button, a.button {
+  display: inline-block;
+  background: #A0CE4E;
+  color: #404040;
+  -moz-border-radius: 4px / 4px;
+  -webkit-border-radius: 4px 4px;
+  border-radius: 4px / 4px;
+  line-height: 1;
+  font-weight: bold;
+  padding: 1em;
+  border: 0;
+  text-align: center;
+}
+/* line 18, ../../source/css/scss/objects/_buttons.scss */
+.btn:hover, .btn:focus, .wp-block-button__link:hover, .wp-block-button__link:focus, .wp-block-button:hover, .wp-block-button:focus, a.button:hover, a.button:focus {
+  background: #666;
+  color: #fff;
+}
+/* line 23, ../../source/css/scss/objects/_buttons.scss */
+.btn.disabled, .wp-block-button__link.disabled, .wp-block-button.disabled, a.button.disabled {
+  background: #fff;
+  color: #666;
+}
+
+/* line 31, ../../source/css/scss/objects/_buttons.scss */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border: 1px solid;
+  border-color: #ccc #ccc #bbb;
+  border-radius: 3px;
+  background: #A0CE4E;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1;
+  padding: .6em 1em .4em;
+}
+/* line 44, ../../source/css/scss/objects/_buttons.scss */
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  border-color: #ccc #bbb #aaa;
+}
+/* line 48, ../../source/css/scss/objects/_buttons.scss */
+button:active, button:focus,
+input[type="button"]:active,
+input[type="button"]:focus,
+input[type="reset"]:active,
+input[type="reset"]:focus,
+input[type="submit"]:active,
+input[type="submit"]:focus {
+  border-color: #aaa #bbb #bbb;
+}
+
+/* Generic Placeholder Brick: REMOVE FOR PRODUCTION */
+/* line 2, ../../source/css/scss/objects/_blocks.scss */
+.brick {
+  background: #dcdddc;
+  padding: 2em;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 1px solid #fff;
+}
+
+/* Block */
+/* line 11, ../../source/css/scss/objects/_blocks.scss */
+.block {
+  overflow: hidden;
+}
+/* line 14, ../../source/css/scss/objects/_blocks.scss */
+.block p:last-child {
+  margin-bottom: 0;
+}
+
+/* line 19, ../../source/css/scss/objects/_blocks.scss */
+.headline {
+  line-height: 1.2;
+}
+
+/* Hero Block */
+/* line 24, ../../source/css/scss/objects/_blocks.scss */
+.block-hero {
+  margin-bottom: 0.5em;
+}
+/* line 28, ../../source/css/scss/objects/_blocks.scss */
+.block-hero .b-thumb img {
+  display: block;
+}
+@media all and (min-width: 994px) {
+  /* line 24, ../../source/css/scss/objects/_blocks.scss */
+  .block-hero {
+    position: relative;
+  }
+  /* line 36, ../../source/css/scss/objects/_blocks.scss */
+  .block-hero .b-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #666;
+    color: #fff;
+    padding: 1.5em;
+  }
+}
+
+/* Block Thumbnail with Headline */
+/* line 49, ../../source/css/scss/objects/_blocks.scss */
+.block-thumb {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  	/*
+  
+  	.b-thumb {
+  		@media all and (min-width: $bp-small-2) {
+  			display: table-cell;
+  			vertical-align: top;	
+  	  		width: 30%;
+  	  		max-width: 10em;
+  
+  	 		img {
+  	 			display: block;
+  				  width: 100%;
+  				  height: auto;
+  	 		}
+   		}
+  	}
+  
+  	.b-text {
+  		@media all and (min-width: $bp-small-2) {
+  			display: table-cell;
+  			width: 70%;
+  			padding: 0 $pad;
+  		}
+  	}
+  	*/
+}
+/* line 54, ../../source/css/scss/objects/_blocks.scss */
+.block-thumb .b-inner {
+  display: table-row;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+/* Block Headline Summary */
+/* line 89, ../../source/css/scss/objects/_blocks.scss */
+.block-headline-summary a {
+  display: block;
+  padding: 0.5em;
+}
+
+/* Block Inset */
+/* line 96, ../../source/css/scss/objects/_blocks.scss */
+.block-inset {
+  position: relative;
+}
+/* line 99, ../../source/css/scss/objects/_blocks.scss */
+.block-inset .b-thumb {
+  position: relative;
+  z-index: 0;
+}
+/* line 103, ../../source/css/scss/objects/_blocks.scss */
+.block-inset .b-thumb img {
+  display: block;
+}
+
+/* Hero Block */
+/* line 110, ../../source/css/scss/objects/_blocks.scss */
+.block-inset {
+  margin-bottom: 0.5em;
+  position: relative;
+}
+/* line 114, ../../source/css/scss/objects/_blocks.scss */
+.block-inset .headline {
+  font-size: 1.1em;
+}
+/* line 118, ../../source/css/scss/objects/_blocks.scss */
+.block-inset .b-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #666;
+  color: #fff;
+  padding: 0.5em;
+}
+
+/* Block Thumb with Summary */
+/* line 131, ../../source/css/scss/objects/_blocks.scss */
+.block-thumb-summary .b-thumb {
+  float: left;
+  width: 50%;
+}
+/* line 136, ../../source/css/scss/objects/_blocks.scss */
+.block-thumb-summary .b-text {
+  margin-left: 50%;
+  padding: 0.5em;
+}
+
+/* line 1, ../../source/css/scss/objects/_tooltip.scss */
+.tooltip-container {
+  display: inline-block;
+  position: relative;
+}
+/* line 6, ../../source/css/scss/objects/_tooltip.scss */
+.tooltip-container:hover .tooltip {
+  display: block;
+}
+
+/* line 12, ../../source/css/scss/objects/_tooltip.scss */
+.tooltip-link {
+  background: #fff;
+}
+
+/* line 16, ../../source/css/scss/objects/_tooltip.scss */
+.tooltip {
+  display: none;
+  position: absolute;
+  top: 1.5em;
+  left: 0;
+  width: 18em;
+  padding: 1em;
+  background: #fff;
+  border: 1px solid #666;
+  box-shadow: 0.3em 0.3em 1em 0 rgba(0, 0, 0, 0.2);
+  /*
+  	@media all and (min-width: $bp-small-2) {
+  		width: 27em;
+  	}
+  
+  	@media all and (min-width: $bp-small-3) {
+  		width: 30em;
+  	}
+  	*/
+}
+/* line 27, ../../source/css/scss/objects/_tooltip.scss */
+.tooltip h2 {
+  margin-top: 0;
+}
+@media all and (min-width: 677px) {
+  /* line 16, ../../source/css/scss/objects/_tooltip.scss */
+  .tooltip {
+    width: 22em;
+  }
+}
+
+/* line 1, ../../source/css/scss/objects/_accordion.scss */
+.accordion {
+  margin-bottom: 1em;
+}
+
+/* line 5, ../../source/css/scss/objects/_accordion.scss */
+.acc-handle {
+  background: #404040;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  display: block;
+  position: relative;
+  padding: 0.5em;
+  border-bottom: 1px solid #fff;
+}
+/* line 15, ../../source/css/scss/objects/_accordion.scss */
+.acc-handle:after {
+  content: "+";
+  float: right;
+}
+/* line 20, ../../source/css/scss/objects/_accordion.scss */
+.acc-handle:hover {
+  color: #fff;
+  background: #404040;
+}
+/* line 26, ../../source/css/scss/objects/_accordion.scss */
+.acc-handle.active {
+  background: #404040;
+}
+/* line 29, ../../source/css/scss/objects/_accordion.scss */
+.acc-handle.active:after {
+  content: "-";
+}
+
+/* line 1, ../../source/css/scss/objects/_tabs.scss */
+.tabs {
+  overflow: hidden;
+}
+/* line 4, ../../source/css/scss/objects/_tabs.scss */
+.tabs ul {
+  display: table;
+  width: 100%;
+}
+/* line 9, ../../source/css/scss/objects/_tabs.scss */
+.tabs li {
+  display: table-cell;
+  text-align: center;
+  border-right: 1px solid #fff;
+}
+/* line 14, ../../source/css/scss/objects/_tabs.scss */
+.tabs li:last-child {
+  border-right: 0;
+}
+/* line 19, ../../source/css/scss/objects/_tabs.scss */
+.tabs a {
+  display: block;
+  padding: 0.5em;
+  background: #666;
+}
+/* line 24, ../../source/css/scss/objects/_tabs.scss */
+.tabs a:hover, .tabs a:focus {
+  background: #fff;
+}
+/* line 28, ../../source/css/scss/objects/_tabs.scss */
+.tabs a.active {
+  background: #404040;
+  color: #fff;
+}
+
+/* line 1, ../../source/css/scss/objects/_sections.scss */
+.section {
+  margin: 0 0 1em;
+}
+
+/* line 5, ../../source/css/scss/objects/_sections.scss */
+.section-title {
+  margin-bottom: 0.5em;
+}
+
+/* line 3, ../../source/css/scss/objects/_article.scss */
+.article-header h1 {
+  font-size: 2.5em;
+}
+
+/* line 8, ../../source/css/scss/objects/_article.scss */
+.byline {
+  font-size: 0.875em;
+  font-style: italic;
+  margin-bottom: 0.5em;
+}
+
+/* line 15, ../../source/css/scss/objects/_article.scss */
+.social-share {
+  overflow: hidden;
+  margin-bottom: 1em;
+}
+/* line 19, ../../source/css/scss/objects/_article.scss */
+.social-share li {
+  float: left;
+  margin-right: 0.5em;
+}
+/* line 24, ../../source/css/scss/objects/_article.scss */
+.social-share a {
+  background: #404040;
+  color: #fff;
+  display: block;
+  padding: 0.5em;
+}
+/* line 30, ../../source/css/scss/objects/_article.scss */
+.social-share a:hover {
+  background: #666;
+}
+
+/* line 2, ../../source/css/scss/objects/_comments.scss */
+.comments li {
+  margin-bottom: 1em;
+}
+
+/* line 7, ../../source/css/scss/objects/_comments.scss */
+.comment-container {
+  overflow: hidden;
+  margin-bottom: 1em;
+  list-style: none;
+}
+
+/* line 13, ../../source/css/scss/objects/_comments.scss */
+.comment-meta {
+  float: left;
+  width: 6.5em;
+}
+/* line 17, ../../source/css/scss/objects/_comments.scss */
+.comment-meta img {
+  display: block;
+  border: 1px solid #fff;
+  margin-bottom: 0.5em;
+}
+
+/* line 24, ../../source/css/scss/objects/_comments.scss */
+.comment-name {
+  font-size: 0.75em;
+}
+
+/* line 28, ../../source/css/scss/objects/_comments.scss */
+.comment-text {
+  margin-left: 9em;
+}
+
+/* line 34, ../../source/css/scss/objects/_comments.scss */
+.comment-content a {
+  word-wrap: break-word;
+}
+
+/* line 37, ../../source/css/scss/objects/_comments.scss */
+.bypostauthor {
+  display: block;
+}
+
+/*------------------------------------*\
+    $MESSAGING
+\*------------------------------------*/
+/* line 6, ../../source/css/scss/objects/_messaging.scss */
+.alert {
+  text-align: center;
+  padding: 1em;
+  margin-bottom: 0.5em;
+  border: 1px solid #666;
+  background: #fff;
+}
+
+/* line 14, ../../source/css/scss/objects/_messaging.scss */
+.alert-error {
+  color: #666;
+  border-color: #666;
+  background: #ffbebe;
+}
+
+/*------------------------------------*\
+    $WORDPRESS
+\*------------------------------------*/
+/*------------------------------------*\
+    $GUTENBERG
+\*------------------------------------*/
+/* line 1, ../../source/css/scss/objects/_gtblocks.scss */
+.experience-container {
+  margin-bottom: 1.5em;
+  display: flex;
+}
+/* line 5, ../../source/css/scss/objects/_gtblocks.scss */
+.experience-container .experience-logo {
+  width: 25%;
+  float: left;
+  flex: 0 0 25%;
+}
+/* line 13, ../../source/css/scss/objects/_gtblocks.scss */
+.experience-container .experience-content {
+  padding-left: 1.5em;
+  flex: 1;
+}
+/* line 16, ../../source/css/scss/objects/_gtblocks.scss */
+.experience-container .experience-content p {
+  margin-bottom: 0;
+}
+
+/*------------------------------------*\
+    $WOOCOMMERCE
+\*------------------------------------*/
+/*
+Theme Name: singlecoaching
+
+WooCommerce styles override
+*/
+/**
+ * WooCommerce color variables
+ */
+/**
+ * Imports
+ */
+/**
+ * Shop tables
+ */
+/**
+ * Products
+ */
+/**
+ * Single product
+ */
+/**
+ * Single Product
+ */
+/* line 5, ../../source/css/scss/shop/_single-product.scss */
+.single-product div.product {
+  content: "";
+  display: table;
+  table-layout: fixed;
+  position: relative;
+}
+/* line 9, ../../source/css/scss/shop/_single-product.scss */
+.single-product div.product .woocommerce-product-gallery {
+  position: relative;
+}
+/* line 12, ../../source/css/scss/shop/_single-product.scss */
+.single-product div.product .woocommerce-product-gallery .woocommerce-product-gallery__trigger {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  display: block;
+  z-index: 99;
+}
+/* line 20, ../../source/css/scss/shop/_single-product.scss */
+.single-product div.product .woocommerce-product-gallery .flex-viewport {
+  margin-bottom: 1em;
+}
+/* line 24, ../../source/css/scss/shop/_single-product.scss */
+.single-product div.product .woocommerce-product-gallery .flex-control-thumbs {
+  content: "";
+  display: table;
+  table-layout: fixed;
+  margin: 0;
+  padding: 0;
+}
+/* line 29, ../../source/css/scss/shop/_single-product.scss */
+.single-product div.product .woocommerce-product-gallery .flex-control-thumbs li {
+  list-style: none;
+  cursor: pointer;
+  float: left;
+}
+/* line 34, ../../source/css/scss/shop/_single-product.scss */
+.single-product div.product .woocommerce-product-gallery .flex-control-thumbs li img {
+  opacity: .5;
+}
+/* line 37, ../../source/css/scss/shop/_single-product.scss */
+.single-product div.product .woocommerce-product-gallery .flex-control-thumbs li img.flex-active {
+  opacity: 1;
+}
+/* line 43, ../../source/css/scss/shop/_single-product.scss */
+.single-product div.product .woocommerce-product-gallery .flex-control-thumbs li:hover img {
+  opacity: 1;
+}
+/* line 53, ../../source/css/scss/shop/_single-product.scss */
+.single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-2 .flex-control-thumbs li {
+  width: 48.1%;
+}
+/* line 56, ../../source/css/scss/shop/_single-product.scss */
+.single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-2 .flex-control-thumbs li:nth-child(2n) {
+  margin-right: 0;
+}
+/* line 60, ../../source/css/scss/shop/_single-product.scss */
+.single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-2 .flex-control-thumbs li:nth-child(2n+1) {
+  clear: both;
+}
+/* line 53, ../../source/css/scss/shop/_single-product.scss */
+.single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-3 .flex-control-thumbs li {
+  width: 30.79667%;
+}
+/* line 56, ../../source/css/scss/shop/_single-product.scss */
+.single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-3 .flex-control-thumbs li:nth-child(3n) {
+  margin-right: 0;
+}
+/* line 60, ../../source/css/scss/shop/_single-product.scss */
+.single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-3 .flex-control-thumbs li:nth-child(3n+1) {
+  clear: both;
+}
+/* line 53, ../../source/css/scss/shop/_single-product.scss */
+.single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-4 .flex-control-thumbs li {
+  width: 22.15%;
+}
+/* line 56, ../../source/css/scss/shop/_single-product.scss */
+.single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-4 .flex-control-thumbs li:nth-child(4n) {
+  margin-right: 0;
+}
+/* line 60, ../../source/css/scss/shop/_single-product.scss */
+.single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-4 .flex-control-thumbs li:nth-child(4n+1) {
+  clear: both;
+}
+/* line 53, ../../source/css/scss/shop/_single-product.scss */
+.single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-5 .flex-control-thumbs li {
+  width: 16.96%;
+}
+/* line 56, ../../source/css/scss/shop/_single-product.scss */
+.single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-5 .flex-control-thumbs li:nth-child(5n) {
+  margin-right: 0;
+}
+/* line 60, ../../source/css/scss/shop/_single-product.scss */
+.single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-5 .flex-control-thumbs li:nth-child(5n+1) {
+  clear: both;
+}
+
+/* line 72, ../../source/css/scss/shop/_single-product.scss */
+.stock:empty:before {
+  display: none;
+}
+/* line 76, ../../source/css/scss/shop/_single-product.scss */
+.stock.in-stock {
+  color: #e2f9b8;
+}
+/* line 80, ../../source/css/scss/shop/_single-product.scss */
+.stock.out-of-stock {
+  color: #e2401c;
+}
+
+/* zelf toegevoegd */
+/* uit custom css */
+/* line 89, ../../source/css/scss/shop/_single-product.scss */
+.single-product div.product {
+  content: "";
+  display: table;
+  table-layout: fixed;
+  position: relative;
+  width: 100%;
+}
+
+/* line 96, ../../source/css/scss/shop/_single-product.scss */
+a {
+  text-decoration: underline;
+}
+
+/* line 99, ../../source/css/scss/shop/_single-product.scss */
+header.entry-header {
+  margin-top: 1.4em;
+}
+
+/* line 103, ../../source/css/scss/shop/_single-product.scss */
+.widget-area .widget:first-child h2 {
+  margin-top: 0.53em;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+/* line 108, ../../source/css/scss/shop/_single-product.scss */
+.tabs a {
+  background-color: #fff;
+  color: #333;
+  text-align: left;
+}
+
+/* line 115, ../../source/css/scss/shop/_single-product.scss */
+div.summary.entry-summary div.product_meta {
+  margin-top: 1em;
+}
+
+/* line 119, ../../source/css/scss/shop/_single-product.scss */
+.woocommerce-message, .woocommerce-info, .woocommerce-error, .woocommerce-noreviews, p.no-comments {
+  background-color: transparent;
+  font-weight: bold;
+  display: block;
+  clear: both;
+}
+
+/* line 126, ../../source/css/scss/shop/_single-product.scss */
+.btn, .wp-block-button__link, .wp-block-button, a.button, .button {
+  background: #b7df53;
+  display: inline-block;
+  clear: both;
+  width: auto;
+  /*	margin: 1em auto;*/
+  /*	max-width: 75%;*/
+  text-decoration: underline;
+  font-variant: small-caps;
+  /*	padding: 1em;*/
+}
+
+/* line 139, ../../source/css/scss/shop/_single-product.scss */
+form.woocommerce-cart-form table {
+  margin-top: 1em;
+  border: solid 1px #fff;
+}
+
+/* line 144, ../../source/css/scss/shop/_single-product.scss */
+table, th, td {
+  border: solid 1px #fff;
+}
+
+/* line 147, ../../source/css/scss/shop/_single-product.scss */
+.woocommerce-cart-form__contents thead tr th.product-thumbnail {
+  width: 75px;
+  margin-right: 1em;
+}
+
+/* line 151, ../../source/css/scss/shop/_single-product.scss */
+th.product-remove {
+  color: #333;
+}
+
+/* line 154, ../../source/css/scss/shop/_single-product.scss */
+.button, #submit {
+  padding: 1em;
+  font-weight: bold;
+  font-size: 1.05em;
+}
+
+/* line 161, ../../source/css/scss/shop/_single-product.scss */
+.coupon {
+  color: #333;
+  margin-top: 1em;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+/* line 167, ../../source/css/scss/shop/_single-product.scss */
+.tribe-events-list-widget .tribe-list-widget {
+  margin-top: 1rem;
+  margin-left: -5rem;
+  margin-right: -2rem;
+}
+
+/* line 173, ../../source/css/scss/shop/_single-product.scss */
+.tribe-events-list-widget-events .tribe-events-event-image {
+  margin: 0;
+  text-align: left;
+  flex-basis: 40px;
+}
+
+/* line 180, ../../source/css/scss/shop/_single-product.scss */
+.single-tribe_events .tribe-events-single-section {
+  background: #d2eb94;
+  margin-bottom: 2.5rem;
+  height: 391px;
+}
+
+/* line 187, ../../source/css/scss/shop/_single-product.scss */
+.tribe-single-event-intro-image-title, .title {
+  background: rgba(149, 194, 36, 0.7);
+}
+
+/* line 193, ../../source/css/scss/shop/_single-product.scss */
+#custom_html-30 h3, h3 {
+  margin-bottom: 0.7em;
+  font-size: 1em;
+}
+
+/* line 199, ../../source/css/scss/shop/_single-product.scss */
+#custom_html-30 p::after {
+  content: "";
+  height: 3px;
+  background: -webkit-linear-gradient(left, rgba(150, 150, 150, 0) 0, rgba(150, 150, 150, 0) 15%, rgba(150, 150, 150, 0.65) 50%, rgba(150, 150, 150, 0) 85%, rgba(150, 150, 150, 0) 100%);
+  background: linear-gradient(to right, rgba(150, 150, 150, 0) 0%, rgba(150, 150, 150, 0) 15%, rgba(150, 150, 150, 0.65) 50%, rgba(150, 150, 150, 0) 85%, rgba(150, 150, 150, 0) 100%);
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  display: block;
+}
+
+/* line 208, ../../source/css/scss/shop/_single-product.scss */
+#custom_html-30 p:last-child:after {
+  content: "";
+  height: 0;
+  background: #fff;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: block;
+}
+
+/* line 216, ../../source/css/scss/shop/_single-product.scss */
+.tribe-events-meta-group .tribe-events-single-section-title {
+  margin-top: 1.5em;
+}
+
+/* line 219, ../../source/css/scss/shop/_single-product.scss */
+#tribe-events-footer {
+  display: none;
+}
+
+/* line 223, ../../source/css/scss/shop/_single-product.scss */
+.comments-title {
+  margin-bottom: 1.5em;
+}
+
+/* line 226, ../../source/css/scss/shop/_single-product.scss */
+.comment-metadata {
+  font-size: 0.95em;
+}
+
+/* line 227, ../../source/css/scss/shop/_single-product.scss */
+a, a.tribe-events-read-more,
+a:hover, a:focus, .tribe-events-read-more:hover, .tribe-events-read-more:focus {
+  color: #74971c;
+}
+
+/* line 232, ../../source/css/scss/shop/_single-product.scss */
+a:focus, .tribe-events-read-more:focus {
+  outline: 1px dotted #74971c;
+}
+
+/* line 236, ../../source/css/scss/shop/_single-product.scss */
+a:hover, a:focus, .tribe-events-read-more:hover, .tribe-events-read-more:focus {
+  color: #74971c;
+}
+
+/* line 241, ../../source/css/scss/shop/_single-product.scss */
+a, a.tribe-events-read-more, a.customize-unpreviewable {
+  color: #333;
+  text-decoration: underline;
+}
+
+/* line 248, ../../source/css/scss/shop/_single-product.scss */
+div.tribe-content-list div.tribe-events-list-event-description.tribe-events-content.description.entry-summary a.tribe-events-read-more {
+  text-decoration: underline;
+}
+
+/* line 249, ../../source/css/scss/shop/_single-product.scss */
+.alignleft, .alignright {
+  display: inline-block;
+}
+
+/* line 252, ../../source/css/scss/shop/_single-product.scss */
+.alignleft {
+  float: left;
+  margin-right: 1em;
+}
+
+/* line 256, ../../source/css/scss/shop/_single-product.scss */
+.alignright {
+  float: right;
+  margin-left: 1em;
+}
+
+/* line 260, ../../source/css/scss/shop/_single-product.scss */
+.btn, .wp-block-button__link, .wp-block-button, a.button {
+  display: inline-block;
+  color: #404040;
+  -moz-border-radius: 4px / 4px;
+  -webkit-border-radius: 4px 4px;
+  border-radius: 4px / 4px;
+  line-height: 1;
+  font-weight: normal;
+  padding: 0.5rem;
+  border: 0;
+  text-align: center;
+}
+
+/* line 273, ../../source/css/scss/shop/_single-product.scss */
+.btn:hover, .btn:focus,
+.btn:active, .wp-block-button__link:hover, .wp-block-button__link:focus, .wp-block-button__link:active, .wp-block-button:hover, .wp-block-button:focus, .wp-block-button:active, a.button:hover, a.button:focus, a.button:active {
+  color: #fff;
+  padding: 0.5rem;
+}
+
+/* line 281, ../../source/css/scss/shop/_single-product.scss */
+btn, .wp-block-button__link, .wp-block-button, a.button {
+  display: table-cell;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* line 287, ../../source/css/scss/shop/_single-product.scss */
+wc-forward {
+  margin: 1rem 0;
+}
+
+/* line 288, ../../source/css/scss/shop/_single-product.scss */
+ul.woocommerce-error {
+  list-style: none;
+}
+
+/* line 291, ../../source/css/scss/shop/_single-product.scss */
+.woocommerce-breadcrumb {
+  margin-bottom: 1rem;
+}
+
+/* line 294, ../../source/css/scss/shop/_single-product.scss */
+table.shop_table_responsive tr td.product-price, table.shop_table_responsive tr td.product-subtotal {
+  text-align: right;
+}
+
+/* line 297, ../../source/css/scss/shop/_single-product.scss */
+.tribe-events-meta-group .tribe-events-single-section-title {
+  margin-bottom: 1em;
+}
+
+/* line 299, ../../source/css/scss/shop/_single-product.scss */
+.button, #submit {
+  padding: 1em;
+  font-weight: bold;
+  font-size: 1.05em;
+  margin-bottom: 1em;
+}
+
+/* line 307, ../../source/css/scss/shop/_single-product.scss */
+a.button:hover {
+  padding: 1em;
+}
+
+/* line 311, ../../source/css/scss/shop/_single-product.scss */
+a {
+  text-decoration: underline;
+}
+
+/* line 314, ../../source/css/scss/shop/_single-product.scss */
+btn, .wp-block-button__link, .wp-block-button {
+  display: table-cell;
+  padding: 0.5em;
+  text-align: center;
+}
+
+/* line 320, ../../source/css/scss/shop/_single-product.scss */
+.single-tribe_events .tribe-events-cal-links {
+  margin-bottom: 0;
+  display: none;
+}
+
+/* line 326, ../../source/css/scss/shop/_single-product.scss */
+div#tribe-events-content.tribe-events-list a.tribe-events-ical.tribe-events-button {
+  display: none;
+}
+
+/* line 328, ../../source/css/scss/shop/_single-product.scss */
+.site-header {
+  height: 112px;
+}
+
+/* line 331, ../../source/css/scss/shop/_single-product.scss */
+header.entry-header {
+  margin-top: 2em;
+}
+
+/* line 335, ../../source/css/scss/shop/_single-product.scss */
+.widget-area .widget:first-child h2 {
+  margin-top: 0.93em;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+/* line 340, ../../source/css/scss/shop/_single-product.scss */
+thead tr th.product-price, thead tr th.product-subtotal {
+  text-align: right;
+}
+
+/* line 341, ../../source/css/scss/shop/_single-product.scss */
+thead tr th.product-quantity {
+  text-align: center;
+}
+
+/* line 343, ../../source/css/scss/shop/_single-product.scss */
+.woocommerce-message, .woocommerce-info, .woocommerce-error, .woocommerce-noreviews, p.no-comments {
+  background-color: #d7f2ae;
+  font-weight: bold;
+  display: block;
+  clear: both;
+  margin-bottom: 1em;
+  padding: 0.5em;
+}
+
+/* line 353, ../../source/css/scss/shop/_single-product.scss */
+.woocommerce-billing-fields__field-wrapper {
+  margin-top: 1em;
+}
+
+/* line 356, ../../source/css/scss/shop/_single-product.scss */
+a.button.wc-forward {
+  border-bottom: 16px solid #fff;
+}
+
+/* line 358, ../../source/css/scss/shop/_single-product.scss */
+body.woocommerce .star-rating::before {
+  content: "SSSSS";
+  color: #ccc;
+}
+
+/* line 361, ../../source/css/scss/shop/_single-product.scss */
+body.woocommerce .star-rating span::before {
+  content: "SSSSS";
+  color: #a1d753;
+}
+
+/* line 365, ../../source/css/scss/shop/_single-product.scss */
+#tab-description, .woocommerce-Reviews {
+  width: 80%;
+  float: right;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  padding: 1em;
+}
+
+/* line 369, ../../source/css/scss/shop/_single-product.scss */
+.woocommerce-Reviews {
+  margin-top: 1.5em;
+}
+
+/* line 371, ../../source/css/scss/shop/_single-product.scss */
+ul.tabs.wc-tabs {
+  width: 20%;
+  float: left;
+  box-sizing: border-box;
+  margin-top: 1.5em;
+}
+
+/* line 375, ../../source/css/scss/shop/_single-product.scss */
+li#tab-title-description.description_tab.active {
+  border: 1px solid #a1d753;
+}
+
+/* line 378, ../../source/css/scss/shop/_single-product.scss */
+.comment-text {
+  margin-left: 0;
+}
+
+/* line 381, ../../source/css/scss/shop/_single-product.scss */
+.stock.in-stock {
+  color: #79af28;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 1em 0;
+}
+
+/* line 389, ../../source/css/scss/shop/_single-product.scss */
+input.minus {
+  width: 40px;
+}
+
+/* line 390, ../../source/css/scss/shop/_single-product.scss */
+.quantity {
+  width: 120px;
+}
+
+/* line 394, ../../source/css/scss/shop/_single-product.scss */
+.woocommerce-message, .woocommerce-info, .woocommerce-error, .woocommerce-noreviews, p.no-comments {
+  background-color: transparent;
+  font-weight: bold;
+  display: block;
+  clear: both;
+  margin-bottom: 1em;
+  padding: 0.5em;
+}
+
+/* line 404, ../../source/css/scss/shop/_single-product.scss */
+.stock.in-stock, .woocommerce-message {
+  color: #79af28;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 1em 0;
+}
+
+/* line 412, ../../source/css/scss/shop/_single-product.scss */
+.site-header {
+  height: 123px;
+}
+
+@media all and (max-width: 790px) {
+  /* line 414, ../../source/css/scss/shop/_single-product.scss */
+  .tribe-intro-list {
+    width: 100%;
+  }
+}
+/* line 419, ../../source/css/scss/shop/_single-product.scss */
+h2 {
+  font-size: 1.3em;
+  margin: 1em 0;
+}
+
+/* line 422, ../../source/css/scss/shop/_single-product.scss */
+.single-product div.product {
+  content: "";
+  display: table;
+  table-layout: fixed;
+  position: relative;
+  width: 100%;
+}
+
+/* line 429, ../../source/css/scss/shop/_single-product.scss */
+a {
+  text-decoration: underline;
+}
+
+/* line 432, ../../source/css/scss/shop/_single-product.scss */
+header.entry-header {
+  margin-top: 1.4em;
+}
+
+/* line 436, ../../source/css/scss/shop/_single-product.scss */
+h1.widget-area .widget:first-child h2 {
+  margin-top: 0.53em;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+/* line 441, ../../source/css/scss/shop/_single-product.scss */
+.tabs a {
+  background-color: #fff;
+  color: #333;
+  text-align: left;
+}
+
+/* line 448, ../../source/css/scss/shop/_single-product.scss */
+div.summary.entry-summary div.product_meta {
+  margin-top: 1em;
+}
+
+/* line 452, ../../source/css/scss/shop/_single-product.scss */
+.woocommerce-message, .woocommerce-info, .woocommerce-error, .woocommerce-noreviews, p.no-comments {
+  background-color: transparent;
+  font-weight: bold;
+  display: block;
+  clear: both;
+}
+
+/* line 459, ../../source/css/scss/shop/_single-product.scss */
+.btn, .wp-block-button__link, .wp-block-button, a.button, .button {
+  background: #b7df53;
+  display: inline-block;
+  clear: both;
+  width: auto;
+  /*	margin: 1em auto;*/
+  /*	max-width: 75%;*/
+  text-decoration: underline;
+  font-variant: small-caps;
+  /*	padding: 1em;*/
+}
+
+/* line 472, ../../source/css/scss/shop/_single-product.scss */
+form.woocommerce-cart-form table {
+  margin-top: 1em;
+  border: solid 1px #fff;
+}
+
+/* line 477, ../../source/css/scss/shop/_single-product.scss */
+table, th, td {
+  border: solid 1px #fff;
+}
+
+/* line 480, ../../source/css/scss/shop/_single-product.scss */
+.woocommerce-cart-form__contents thead tr th.product-thumbnail {
+  width: 75px;
+  margin-right: 1em;
+}
+
+/* line 484, ../../source/css/scss/shop/_single-product.scss */
+th.product-remove {
+  color: #333;
+}
+
+/* line 487, ../../source/css/scss/shop/_single-product.scss */
+.button, #submit {
+  padding: 1em;
+  font-weight: bold;
+  font-size: 1.05em;
+}
+
+/* line 494, ../../source/css/scss/shop/_single-product.scss */
+.coupon {
+  color: #333;
+  margin-top: 1em;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+/* line 500, ../../source/css/scss/shop/_single-product.scss */
+.tribe-events-list-widget .tribe-list-widget {
+  margin-top: 1rem;
+  margin-left: -5rem;
+  margin-right: -2rem;
+}
+
+/* line 506, ../../source/css/scss/shop/_single-product.scss */
+.tribe-events-list-widget-events .tribe-events-event-image {
+  margin: 0;
+  text-align: left;
+  flex-basis: 40px;
+}
+
+/* line 513, ../../source/css/scss/shop/_single-product.scss */
+.single-tribe_events .tribe-events-single-section {
+  background: #d2eb94;
+  margin-bottom: 2.5rem;
+  height: 391px;
+}
+
+/* line 520, ../../source/css/scss/shop/_single-product.scss */
+.tribe-single-event-intro-image-title, .title {
+  background: rgba(149, 194, 36, 0.7);
+}
+
+/* line 526, ../../source/css/scss/shop/_single-product.scss */
+#custom_html-30 h3, h3 {
+  margin-bottom: 0.7em;
+  font-size: 1.1em;
+}
+
+/* line 532, ../../source/css/scss/shop/_single-product.scss */
+#custom_html-30 p::after {
+  content: "";
+  height: 3px;
+  background: -webkit-linear-gradient(left, rgba(150, 150, 150, 0) 0, rgba(150, 150, 150, 0) 15%, rgba(150, 150, 150, 0.65) 50%, rgba(150, 150, 150, 0) 85%, rgba(150, 150, 150, 0) 100%);
+  background: linear-gradient(to right, rgba(150, 150, 150, 0) 0%, rgba(150, 150, 150, 0) 15%, rgba(150, 150, 150, 0.65) 50%, rgba(150, 150, 150, 0) 85%, rgba(150, 150, 150, 0) 100%);
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  display: block;
+}
+
+/* line 541, ../../source/css/scss/shop/_single-product.scss */
+#custom_html-30 p:last-child:after {
+  content: "";
+  height: 0;
+  background: #fff;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: block;
+}
+
+/* line 549, ../../source/css/scss/shop/_single-product.scss */
+.tribe-events-meta-group .tribe-events-single-section-title {
+  margin-top: 1.5em;
+}
+
+/* line 552, ../../source/css/scss/shop/_single-product.scss */
+#tribe-events-footer {
+  display: none;
+}
+
+/* line 556, ../../source/css/scss/shop/_single-product.scss */
+.comments-title {
+  margin-bottom: 1.5em;
+}
+
+/* line 559, ../../source/css/scss/shop/_single-product.scss */
+.comment-metadata {
+  font-size: 0.95em;
+}
+
+/* line 560, ../../source/css/scss/shop/_single-product.scss */
+a, a.tribe-events-read-more,
+a:hover, a:focus, .tribe-events-read-more:hover, .tribe-events-read-more:focus {
+  color: #74971c;
+}
+
+/* line 565, ../../source/css/scss/shop/_single-product.scss */
+a:focus, .tribe-events-read-more:focus {
+  outline: 1px dotted #74971c;
+}
+
+/* line 569, ../../source/css/scss/shop/_single-product.scss */
+a:hover, a:focus, .tribe-events-read-more:hover, .tribe-events-read-more:focus {
+  color: #74971c;
+}
+
+/* line 574, ../../source/css/scss/shop/_single-product.scss */
+a, a.tribe-events-read-more, a.customize-unpreviewable {
+  color: #333;
+  text-decoration: underline;
+}
+
+/* line 581, ../../source/css/scss/shop/_single-product.scss */
+div.tribe-content-list div.tribe-events-list-event-description.tribe-events-content.description.entry-summary a.tribe-events-read-more {
+  text-decoration: underline;
+}
+
+/* line 582, ../../source/css/scss/shop/_single-product.scss */
+.alignleft, .alignright {
+  display: inline-block;
+}
+
+/* line 585, ../../source/css/scss/shop/_single-product.scss */
+.alignleft {
+  float: left;
+  margin-right: 1em;
+}
+
+/* line 589, ../../source/css/scss/shop/_single-product.scss */
+.alignright {
+  float: right;
+  margin-left: 1em;
+}
+
+/* line 593, ../../source/css/scss/shop/_single-product.scss */
+.btn, .wp-block-button__link, .wp-block-button, a.button {
+  display: inline-block;
+  color: #404040;
+  -moz-border-radius: 4px / 4px;
+  -webkit-border-radius: 4px 4px;
+  border-radius: 4px / 4px;
+  line-height: 1;
+  font-weight: normal;
+  padding: 0.5rem;
+  border: 0;
+  text-align: center;
+}
+
+/* line 606, ../../source/css/scss/shop/_single-product.scss */
+.btn:hover, .btn:focus,
+.btn:active, .wp-block-button__link:hover, .wp-block-button__link:focus, .wp-block-button__link:active, .wp-block-button:hover, .wp-block-button:focus, .wp-block-button:active, a.button:hover, a.button:focus, a.button:active {
+  color: #fff;
+  padding: 0.5rem;
+}
+
+/* line 614, ../../source/css/scss/shop/_single-product.scss */
+btn, .wp-block-button__link, .wp-block-button, a.button {
+  display: table-cell;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* line 620, ../../source/css/scss/shop/_single-product.scss */
+wc-forward {
+  margin: 1rem 0;
+}
+
+/* line 621, ../../source/css/scss/shop/_single-product.scss */
+ul.woocommerce-error {
+  list-style: none;
+}
+
+/* line 624, ../../source/css/scss/shop/_single-product.scss */
+.woocommerce-breadcrumb {
+  margin-bottom: 1rem;
+}
+
+/* line 627, ../../source/css/scss/shop/_single-product.scss */
+table.shop_table_responsive tr td.product-price, table.shop_table_responsive tr td.product-subtotal {
+  text-align: right;
+}
+
+/* line 630, ../../source/css/scss/shop/_single-product.scss */
+.tribe-events-meta-group .tribe-events-single-section-title {
+  margin-bottom: 1em;
+}
+
+/* line 632, ../../source/css/scss/shop/_single-product.scss */
+.button, #submit {
+  padding: 1em;
+  font-weight: bold;
+  font-size: 1.05em;
+  margin-bottom: 1em;
+}
+
+/* line 640, ../../source/css/scss/shop/_single-product.scss */
+a.button:hover {
+  padding: 1em;
+}
+
+/* line 644, ../../source/css/scss/shop/_single-product.scss */
+a {
+  text-decoration: underline;
+}
+
+/* line 647, ../../source/css/scss/shop/_single-product.scss */
+btn, .wp-block-button__link, .wp-block-button {
+  display: table-cell;
+  padding: 0.5em;
+  text-align: center;
+}
+
+/* line 653, ../../source/css/scss/shop/_single-product.scss */
+.single-tribe_events .tribe-events-cal-links {
+  margin-bottom: 0;
+  display: none;
+}
+
+/* line 659, ../../source/css/scss/shop/_single-product.scss */
+div#tribe-events-content.tribe-events-list a.tribe-events-ical.tribe-events-button {
+  display: none;
+}
+
+/* line 661, ../../source/css/scss/shop/_single-product.scss */
+.site-header {
+  height: 112px;
+}
+
+/* line 664, ../../source/css/scss/shop/_single-product.scss */
+header.entry-header {
+  margin-top: 2em;
+}
+
+/* line 668, ../../source/css/scss/shop/_single-product.scss */
+h1.entry-title, .widget-area .widget:first-child h2 {
+  margin-top: 0.93em;
+  font-size: 1.6em;
+  margin-bottom: 1em;
+}
+
+/* line 673, ../../source/css/scss/shop/_single-product.scss */
+article h1.entry-title, #custom_html-2 > h2:nth-child(1), h1, .alpha {
+  font-size: 24px;
+  font-size: 1.6rem;
+  line-height: 36px;
+  line-height: 2.25rem;
+  line-height: 1.2;
+  margin-top: -0.4em;
+}
+
+/* line 683, ../../source/css/scss/shop/_single-product.scss */
+thead tr th.product-price, thead tr th.product-subtotal {
+  text-align: right;
+}
+
+/* line 684, ../../source/css/scss/shop/_single-product.scss */
+thead tr th.product-quantity {
+  text-align: center;
+}
+
+/* line 686, ../../source/css/scss/shop/_single-product.scss */
+.woocommerce-message, .woocommerce-info, .woocommerce-error, .woocommerce-noreviews, p.no-comments {
+  background-color: #d7f2ae;
+  font-weight: bold;
+  display: block;
+  clear: both;
+  margin-bottom: 1em;
+  padding: 0.5em;
+}
+
+/* line 696, ../../source/css/scss/shop/_single-product.scss */
+.woocommerce-billing-fields__field-wrapper {
+  margin-top: 1em;
+}
+
+/* line 699, ../../source/css/scss/shop/_single-product.scss */
+a.button.wc-forward {
+  border-bottom: 16px solid #fff;
+}
+
+/* line 701, ../../source/css/scss/shop/_single-product.scss */
+body.woocommerce .star-rating::before {
+  content: "SSSSS";
+  color: #ccc;
+}
+
+/* line 704, ../../source/css/scss/shop/_single-product.scss */
+body.woocommerce .star-rating span::before {
+  content: "SSSSS";
+  color: #a1d753;
+}
+
+/* line 708, ../../source/css/scss/shop/_single-product.scss */
+#tab-description, .woocommerce-Reviews {
+  width: 80%;
+  float: right;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  padding: 1em;
+}
+
+/* line 712, ../../source/css/scss/shop/_single-product.scss */
+.woocommerce-Reviews {
+  margin-top: 1.5em;
+}
+
+/* line 714, ../../source/css/scss/shop/_single-product.scss */
+ul.tabs.wc-tabs {
+  width: 20%;
+  float: left;
+}
+
+/* line 719, ../../source/css/scss/shop/_single-product.scss */
+li#tab-title-description.description_tab.active {
+  border: 1px solid #a1d753;
+}
+
+/* line 722, ../../source/css/scss/shop/_single-product.scss */
+.comment-text {
+  margin-left: 0;
+}
+
+/* line 725, ../../source/css/scss/shop/_single-product.scss */
+.stock.in-stock {
+  color: #79af28;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 1em 0;
+}
+
+/* line 733, ../../source/css/scss/shop/_single-product.scss */
+input.minus {
+  width: 40px;
+}
+
+/* line 734, ../../source/css/scss/shop/_single-product.scss */
+.quantity {
+  width: 120px;
+}
+
+/* line 738, ../../source/css/scss/shop/_single-product.scss */
+.woocommerce-message, .woocommerce-info, .woocommerce-error, .woocommerce-noreviews, p.no-comments {
+  background-color: transparent;
+  font-weight: bold;
+  display: block;
+  clear: both;
+  margin-bottom: 1em;
+  padding: 0.5em;
+}
+
+/* line 748, ../../source/css/scss/shop/_single-product.scss */
+.stock.in-stock, .woocommerce-message {
+  color: #79af28;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 1em 0;
+}
+
+/* line 756, ../../source/css/scss/shop/_single-product.scss */
+.fontawesome-icon.circle-yes {
+  font-size: 14px;
+  border-radius: 50%;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #666;
+  background-color: #666;
+  color: #fff;
+  text-align: center;
+  margin-top: 2px;
+  margin-right: 6px;
+}
+
+/* line 770, ../../source/css/scss/shop/_single-product.scss */
+.site-footer {
+  clear: both;
+  color: #fff;
+  padding: 1.5em 1.5em 0;
+  background: #A0CE4E;
+}
+
+/* line 778, ../../source/css/scss/shop/_single-product.scss */
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  font-size: 1em;
+  padding: 1em;
+}
+
+/* line 783, ../../source/css/scss/shop/_single-product.scss */
+.site-header {
+  height: 123px;
+}
+
+/* einde uit custom css */
+/* line 788, ../../source/css/scss/shop/_single-product.scss */
+.wc-content-area {
+  width: 100%;
+  margin-top: 2em;
+}
+
+/* line 793, ../../source/css/scss/shop/_single-product.scss */
+.wc-thumbnail {
+  width: 40%;
+  float: left;
+  padding-right: 2em;
+}
+
+/* line 798, ../../source/css/scss/shop/_single-product.scss */
+.wc-summary.wc-entry-summary {
+  width: 60%;
+  float: right;
+  padding-right: 2.5em;
+}
+
+@media all and (max-width: 677px) {
+  /* line 805, ../../source/css/scss/shop/_single-product.scss */
+  .wc-content-area {
+    margin-top: 0;
+  }
+
+  /* line 809, ../../source/css/scss/shop/_single-product.scss */
+  .wc-thumbnail {
+    width: 100%;
+    padding: 1em;
+  }
+
+  /* line 813, ../../source/css/scss/shop/_single-product.scss */
+  .wc-summary.wc-entry-summary {
+    width: 100%;
+    padding: 1em;
+  }
+
+  /* line 817, ../../source/css/scss/shop/_single-product.scss */
+  #tab-description {
+    padding-right: 0;
+  }
+
+  /* line 820, ../../source/css/scss/shop/_single-product.scss */
+  .woocommerce-tabs.wc-tabs-wrapper {
+    margin-right: -2em;
+  }
+
+  /* line 823, ../../source/css/scss/shop/_single-product.scss */
+  table.shop_table_responsive tr td {
+    display: inline;
+    text-align: left;
+  }
+
+  /* line 828, ../../source/css/scss/shop/_single-product.scss */
+  tr.woocommerce-cart-form__cart-item.cart_item td.product-thumbnail {
+    display: none;
+  }
+
+  /* line 833, ../../source/css/scss/shop/_single-product.scss */
+  td.product-remove {
+    text-align: left;
+    float: left;
+  }
+  /* line 838, ../../source/css/scss/shop/_single-product.scss */
+  td.product-remove:after {
+    content: ' Verwijder uit winkelmand';
+    display: inline-block;
+  }
+  /* line 842, ../../source/css/scss/shop/_single-product.scss */
+  td.product-remove a.remove {
+    font-size: 150%;
+    text-decoration: none;
+    font-weight: bold;
+    background: #A0CE4E;
+    padding: 0 0.5em;
+  }
+  /* line 849, ../../source/css/scss/shop/_single-product.scss */
+  td.product-remove .quantity {
+    display: block;
+    width: 120px;
+    float: right !important;
+  }
+  /* line 855, ../../source/css/scss/shop/_single-product.scss */
+  td.product-remove td.product-name a {
+    float: left;
+    display: block;
+  }
+  /* line 858, ../../source/css/scss/shop/_single-product.scss */
+  td.product-remove td.product-name a:before {
+    content: ' ';
+  }
+
+  /* line 863, ../../source/css/scss/shop/_single-product.scss */
+  .woocommerce-cart-form__cart-item {
+    text-align: left;
+  }
+
+  /* line 867, ../../source/css/scss/shop/_single-product.scss */
+  tr.woocommerce-cart-form__cart-item {
+    text-align: left;
+    border-bottom: 1px solid #666;
+  }
+}
+/* line 873, ../../source/css/scss/shop/_single-product.scss */
+.quantity {
+  display: block;
+  width: 120px;
+  float: right !important;
+}
+
+/* line 880, ../../source/css/scss/shop/_single-product.scss */
+td.product-name a {
+  clear: both;
+  float: left;
+  display: block;
+  text-align: left;
+}
+/* line 885, ../../source/css/scss/shop/_single-product.scss */
+td.product-name a:before {
+  content: ' - ';
+}
+
+/* na import nog tegenkomen */
+/* line 892, ../../source/css/scss/shop/_single-product.scss */
+.woocommerce-message, .woocommerce-info, .woocommerce-error, .woocommerce-noreviews, p.no-comments {
+  content: "";
+  display: table;
+  table-layout: fixed;
+  background-color: #fff;
+  clear: both;
+}
+
+/* line 902, ../../source/css/scss/shop/_single-product.scss */
+.wc-single_product_summary section.related.products {
+  clear: both;
+  display: block;
+  width: 100%;
+  float: none;
+}
+
+/**
+ * Checkout
+ */
+/**
+ * General WooCommerce components
+ */
+/**
+ * WooCommerce widgets
+ */
+/*------------------------------------*\
+    $EVENTS CALENDAR
+\*------------------------------------*/
+/* line 1, ../../source/css/scss/Events/_page.scss */
+.tribe-events-page-title {
+  text-align: left;
+}
+
+/* line 5, ../../source/css/scss/Events/_page.scss */
+.tribe-events-list-separator-month {
+  background: #A0CE4E;
+}
+
+/* import van avada */
+/* line 13, ../../source/css/scss/Events/_page.scss */
+#tribe-bar-form input[type=text], .input-text, .tribe-bar-disabled #tribe-bar-form .tribe-bar-filters input[type=text], input[type=email], input[type=password], input[type=text] {
+  border: 1px solid #d2d2d2;
+  font-size: 13px;
+  color: #747474;
+  padding: 8px 15px;
+  margin-right: 1%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* line 22, ../../source/css/scss/Events/_page.scss */
+.select2-container .select2-choice, .select2-results .select2-result-label {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 26, ../../source/css/scss/Events/_page.scss */
+#tribe-bar-form input[type=text]::-webkit-input-placeholder {
+  font-style: normal;
+}
+
+/* line 29, ../../source/css/scss/Events/_page.scss */
+#tribe-bar-form input[type=text]:-moz-placeholder {
+  font-style: normal;
+}
+
+/* line 32, ../../source/css/scss/Events/_page.scss */
+#tribe-bar-form input[type=text]::-moz-placeholder {
+  font-style: normal;
+}
+
+/* line 35, ../../source/css/scss/Events/_page.scss */
+#tribe-bar-form input[type=text]:-ms-input-placeholder {
+  font-style: normal;
+}
+
+/* line 40, ../../source/css/scss/Events/_page.scss */
+.quantity {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  border: 1px solid #dbdbdb;
+  overflow: hidden;
+}
+
+/* line 53, ../../source/css/scss/Events/_page.scss */
+.quantity .minus, .quantity .plus, .quantity .qty, .quantity .tribe-ticket-quantity {
+  float: left;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  height: 31px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 12px;
+  color: #333;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+/* line 66, ../../source/css/scss/Events/_page.scss */
+.quantity .qty, .quantity .tribe-ticket-quantity {
+  background: 0 0;
+  width: 43px;
+}
+
+/* line 70, ../../source/css/scss/Events/_page.scss */
+.quantity .qty, .quantity .tribe-ticket-quantity {
+  border-left: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+}
+
+/* line 74, ../../source/css/scss/Events/_page.scss */
+.quantity .qty -webkit-inner-spin-button, .quantity .qty -webkit-outer-spin-button, .quantity .tribe-ticket-quantity -webkit-inner-spin-button, .quantity .tribe-ticket-quantity -webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* line 79, ../../source/css/scss/Events/_page.scss */
+.events-list .tribe-events-loop,
+.single-tribe_organizer .tribe-events-loop,
+.single-tribe_venue .tribe-events-loop,
+.tribe-events-day .tribe-events-loop {
+  max-width: 100%;
+}
+
+/* line 85, ../../source/css/scss/Events/_page.scss */
+.tribe-filter-live #main {
+  overflow: hidden;
+}
+
+/* line 88, ../../source/css/scss/Events/_page.scss */
+.tribe-events-gmap {
+  font-weight: 400;
+}
+
+/* line 91, ../../source/css/scss/Events/_page.scss */
+#tribe-events-pg-template {
+  max-width: 100%;
+}
+
+/* line 94, ../../source/css/scss/Events/_page.scss */
+.event-is-recurring {
+  cursor: pointer;
+}
+
+/* line 97, ../../source/css/scss/Events/_page.scss */
+.tribe-events-notices {
+  margin-top: 0;
+}
+
+/* line 100, ../../source/css/scss/Events/_page.scss */
+#tribe-events-bar {
+  float: left;
+  z-index: 5;
+  margin-bottom: 60px;
+}
+
+/* line 105, ../../source/css/scss/Events/_page.scss */
+#tribe-events-bar:after, #tribe-events-bar:before {
+  content: ' ';
+  position: absolute;
+  display: block;
+  background-color: #f5f5f5;
+  width: 2224px;
+  height: 100%;
+  left: -2224px;
+  overflow: hidden;
+}
+
+/* line 115, ../../source/css/scss/Events/_page.scss */
+#tribe-events-bar:after {
+  left: 100%;
+}
+
+/* line 118, ../../source/css/scss/Events/_page.scss */
+#tribe-events-bar .tribe-bar-filters {
+  padding: 25px 15px;
+}
+
+/* line 121, ../../source/css/scss/Events/_page.scss */
+#tribe-events-bar .tribe-bar-filters-inner {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+/* line 129, ../../source/css/scss/Events/_page.scss */
+.has-sidebar #tribe-events-bar:after, .has-sidebar #tribe-events-bar:before {
+  display: none;
+}
+
+/* line 132, ../../source/css/scss/Events/_page.scss */
+#tribe-events-bar #tribe-bar-form {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  float: left;
+}
+
+/* line 141, ../../source/css/scss/Events/_page.scss */
+#tribe-events-bar #tribe-bar-form input[type=text] {
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* line 145, ../../source/css/scss/Events/_page.scss */
+#tribe-events-bar .tribe-bar-date-filter, #tribe-events-bar .tribe-bar-geoloc-filter, #tribe-events-bar .tribe-bar-search-filter, #tribe-events-bar .tribe-bar-submit {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* line 149, ../../source/css/scss/Events/_page.scss */
+#tribe-events-bar .tribe-bar-filters .tribe-bar-filters-inner .tribe-bar-submit {
+  float: right;
+  padding-top: 0;
+  min-width: 25%;
+  width: auto;
+}
+
+/* line 155, ../../source/css/scss/Events/_page.scss */
+#tribe-events-bar .tribe-bar-filters .tribe-bar-filters-inner .tribe-bar-submit input {
+  float: right;
+  margin: 0;
+  width: auto !important;
+  padding: 13px 38.5px;
+}
+
+/* line 161, ../../source/css/scss/Events/_page.scss */
+#tribe-events-bar #tribe-bar-views .tribe-bar-views-inner {
+  padding-top: 35px;
+  padding-bottom: 60px;
+}
+
+/* line 165, ../../source/css/scss/Events/_page.scss */
+#tribe-events-bar #tribe-bar-views .tribe-bar-views-inner .tribe-bar-views-option a, #tribe-events-bar #tribe-bar-views .tribe-bar-views-inner label {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* line 169, ../../source/css/scss/Events/_page.scss */
+#tribe-events-bar .tribe-events-button {
+  margin-right: 9px;
+}
+
+/* line 172, ../../source/css/scss/Events/_page.scss */
+#tribe-events-bar .tribe-bar-full .tribe-bar-filters {
+  padding-left: 0;
+}
+
+/* line 175, ../../source/css/scss/Events/_page.scss */
+.has-sidebar #tribe-events-bar .tribe-bar-full .tribe-bar-filters {
+  padding-left: 15px;
+}
+
+/* line 178, ../../source/css/scss/Events/_page.scss */
+#tribe-events-bar .tribe-bar-full .tribe-bar-filters .tribe-bar-filters-inner > :first-child {
+  padding-left: 0;
+}
+
+/* line 181, ../../source/css/scss/Events/_page.scss */
+#tribe-events-bar #tribe-bar-form.tribe-bar-collapse {
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+/* line 186, ../../source/css/scss/Events/_page.scss */
+#tribe-events-bar #tribe-bar-form.tribe-bar-collapse #tribe-bar-collapse-toggle {
+  padding: 15px 15px 15px 0;
+}
+
+/* line 189, ../../source/css/scss/Events/_page.scss */
+.has-sidebar #tribe-events-bar #tribe-bar-form.tribe-bar-collapse #tribe-bar-collapse-toggle {
+  padding-left: 15px;
+}
+
+/* line 192, ../../source/css/scss/Events/_page.scss */
+#tribe-events-bar #tribe-bar-form.tribe-bar-collapse .tribe-bar-filters {
+  padding: 10px 0;
+}
+
+/* line 195, ../../source/css/scss/Events/_page.scss */
+#tribe-events-bar #tribe-bar-form.tribe-bar-collapse .tribe-bar-filters-inner {
+  display: block;
+}
+
+/* line 198, ../../source/css/scss/Events/_page.scss */
+#tribe-events-bar #tribe-bar-form.tribe-bar-collapse .tribe-bar-filters-inner > div {
+  padding-bottom: 5px;
+  padding-right: 0;
+}
+
+/* line 202, ../../source/css/scss/Events/_page.scss */
+.has-sidebar #tribe-events-bar #tribe-bar-form.tribe-bar-collapse .tribe-bar-filters-inner > div {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 206, ../../source/css/scss/Events/_page.scss */
+#tribe-events-bar #tribe-bar-form.tribe-bar-collapse .tribe-bar-filters-inner .tribe-bar-submit {
+  padding-top: 10px;
+}
+
+/* line 209, ../../source/css/scss/Events/_page.scss */
+#tribe-events-bar #tribe-bar-form.tribe-bar-collapse #tribe-bar-views .tribe-bar-views-inner {
+  padding: 10px 0 40px;
+}
+
+/* line 212, ../../source/css/scss/Events/_page.scss */
+.tribe-bar-disabled #tribe-events-bar {
+  float: left;
+  width: 100%;
+  min-width: 220px;
+}
+
+/* line 217, ../../source/css/scss/Events/_page.scss */
+.tribe-bar-disabled #tribe-events-bar #tribe-bar-form {
+  width: 100%;
+  border-radius: 0;
+}
+
+/* line 221, ../../source/css/scss/Events/_page.scss */
+.events-archive .datepicker-dropdown {
+  z-index: 100001 !important;
+}
+
+/* line 224, ../../source/css/scss/Events/_page.scss */
+.tribe-bar-disabled {
+  float: none;
+}
+
+/* line 227, ../../source/css/scss/Events/_page.scss */
+#tribe-events-content-wrapper #tribe_events_filters_wrapper .select2-container .select2-choice > .select2-chosen {
+  line-height: 2;
+}
+
+/* line 230, ../../source/css/scss/Events/_page.scss */
+#tribe-events-content-wrapper #tribe_events_filters_wrapper .ui-slider .ui-slider-handle {
+  border: none;
+}
+
+/* line 233, ../../source/css/scss/Events/_page.scss */
+#tribe-events-content-wrapper #tribe_events_filters_wrapper .tribe-reset-icon {
+  height: auto;
+}
+
+/* line 236, ../../source/css/scss/Events/_page.scss */
+#tribe-events-content-wrapper #tribe_events_filters_wrapper.tribe-events-filters-horizontal {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  float: left;
+  margin-bottom: 50px;
+  width: 100%;
+  z-index: 3;
+}
+
+/* line 245, ../../source/css/scss/Events/_page.scss */
+#tribe-events-content-wrapper #tribe_events_filters_wrapper.tribe-events-filters-horizontal:after, #tribe-events-content-wrapper #tribe_events_filters_wrapper.tribe-events-filters-horizontal:before {
+  content: ' ';
+  position: absolute;
+  display: block;
+  background-color: #f5f5f5;
+  width: 2224px;
+  height: 100%;
+  left: -2224px;
+  overflow: hidden;
+}
+
+/* line 255, ../../source/css/scss/Events/_page.scss */
+#tribe-events-content-wrapper #tribe_events_filters_wrapper.tribe-events-filters-horizontal:after {
+  left: 100%;
+}
+
+/* line 258, ../../source/css/scss/Events/_page.scss */
+#tribe-events-content-wrapper #tribe_events_filters_wrapper.tribe-events-filters-horizontal .tribe-events-filters-content {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  float: left;
+  width: 100%;
+  padding: 25px 0;
+  border: 0;
+  background: 0 0;
+}
+
+/* line 277, ../../source/css/scss/Events/_page.scss */
+#tribe-events-content-wrapper #tribe_events_filters_wrapper.tribe-events-filters-horizontal .tribe-events-filters-content:after, #tribe-events-content-wrapper #tribe_events_filters_wrapper.tribe-events-filters-horizontal .tribe-events-filters-content:before {
+  display: none;
+}
+
+/* line 280, ../../source/css/scss/Events/_page.scss */
+#tribe-events-content-wrapper #tribe_events_filters_wrapper.tribe-events-filters-horizontal #tribe_events_filter_control {
+  position: absolute;
+  right: 0;
+  margin-right: 0;
+}
+
+/* line 285, ../../source/css/scss/Events/_page.scss */
+.tribe-filters-closed #tribe-events-content-wrapper #tribe_events_filters_wrapper.tribe-events-filters-horizontal #tribe_events_filter_control, .tribe-mobile #tribe-events-content-wrapper #tribe_events_filters_wrapper.tribe-events-filters-horizontal #tribe_events_filter_control {
+  position: relative;
+}
+
+/* line 288, ../../source/css/scss/Events/_page.scss */
+#tribe-events-content-wrapper #tribe_events_filters_wrapper.tribe-events-filters-horizontal .tribe-events-filters-label {
+  margin-left: 0;
+  margin-bottom: 15px;
+}
+
+/* line 292, ../../source/css/scss/Events/_page.scss */
+.tribe-filters-open #tribe-events-content-wrapper #tribe_events_filters_wrapper.tribe-events-filters-horizontal #tribe_events_filter_control.tribe-events-filters-mobile-controls {
+  margin-top: 20px;
+  margin-left: 0;
+}
+
+/* line 296, ../../source/css/scss/Events/_page.scss */
+#tribe-events-content-wrapper #tribe_events_filters_wrapper.tribe-events-filters-horizontal .tribe-events-filters-label {
+  padding-left: 0;
+  border-bottom: 0;
+}
+
+/* line 300, ../../source/css/scss/Events/_page.scss */
+#tribe-events-content-wrapper #tribe_events_filters_wrapper.tribe-events-filters-horizontal #tribe_events_filters_form {
+  width: 100%;
+}
+
+/* line 303, ../../source/css/scss/Events/_page.scss */
+#tribe-events-content-wrapper #tribe_events_filters_wrapper.tribe-events-filters-horizontal label input[type=checkbox], #tribe-events-content-wrapper #tribe_events_filters_wrapper.tribe-events-filters-horizontal label input[type=radio] {
+  width: auto;
+}
+
+/* line 306, ../../source/css/scss/Events/_page.scss */
+#tribe-events-content-wrapper #tribe_events_filters_wrapper.tribe-events-filters-horizontal .tribe-events-filter-group {
+  box-shadow: none;
+}
+
+/* line 309, ../../source/css/scss/Events/_page.scss */
+#tribe-events-content-wrapper #tribe_events_filters_wrapper.tribe-events-filters-horizontal .tribe-events-filter-group:before {
+  top: -14px;
+}
+
+/* line 312, ../../source/css/scss/Events/_page.scss */
+#tribe-events-content-wrapper #tribe_events_filters_wrapper.tribe-events-filters-horizontal .tribe-events-filters-group-heading {
+  padding: 0 15px 0 0;
+}
+
+/* line 315, ../../source/css/scss/Events/_page.scss */
+#tribe-events-content-wrapper #tribe_events_filters_wrapper.tribe-events-filters-horizontal #tribe_events_filter_control #tribe_events_filters_reset, #tribe-events-content-wrapper #tribe_events_filters_wrapper.tribe-events-filters-horizontal #tribe_events_filter_control #tribe_events_filters_toggle {
+  height: auto;
+  border-color: transparent;
+  width: auto;
+}
+
+/* line 320, ../../source/css/scss/Events/_page.scss */
+#tribe-events-content-wrapper #tribe_events_filters_wrapper.tribe-events-filters-vertical {
+  z-index: 1;
+}
+
+/* line 323, ../../source/css/scss/Events/_page.scss */
+.tribe-mobile #tribe-events-content-wrapper #tribe_events_filters_wrapper.tribe-events-filters-vertical {
+  margin-bottom: 5em;
+}
+
+/* line 326, ../../source/css/scss/Events/_page.scss */
+.tribe-filters-open #tribe-events-content-wrapper #tribe_events_filters_wrapper.tribe-events-filters-vertical {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+/* line 330, ../../source/css/scss/Events/_page.scss */
+#tribe-events-content-wrapper #tribe_events_filters_wrapper.tribe-events-filters-vertical .tribe-events-filters-content {
+  background: 0 0;
+  border: none;
+}
+
+/* line 334, ../../source/css/scss/Events/_page.scss */
+#tribe-events-content-wrapper #tribe_events_filters_wrapper.tribe-events-filters-vertical .tribe_events_filters_show_filters {
+  text-align: center;
+}
+
+/* line 337, ../../source/css/scss/Events/_page.scss */
+#tribe-events-content-wrapper #tribe_events_filters_wrapper.tribe-events-filters-vertical label input[type=checkbox], #tribe-events-content-wrapper #tribe_events_filters_wrapper.tribe-events-filters-vertical label input[type=radio] {
+  width: auto;
+}
+
+/* line 340, ../../source/css/scss/Events/_page.scss */
+#tribe-events-content-wrapper #tribe_events_filters_wrapper.tribe-events-filters-vertical #tribe_events_filter_control #tribe_events_filters_reset, #tribe-events-content-wrapper #tribe_events_filters_wrapper.tribe-events-filters-vertical #tribe_events_filter_control #tribe_events_filters_toggle {
+  height: auto;
+  border-color: transparent;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 344, ../../source/css/scss/Events/_page.scss */
+  #tribe-events-content-wrapper #tribe_events_filters_wrapper.tribe-events-filters-horizontal {
+    float: none;
+  }
+
+  /* line 347, ../../source/css/scss/Events/_page.scss */
+  #tribe-events-content-wrapper #tribe_events_filters_wrapper.tribe-events-filters-horizontal .tribe-events-filters-label {
+    margin-bottom: 10px;
+  }
+
+  /* line 350, ../../source/css/scss/Events/_page.scss */
+  #tribe-events-content-wrapper #tribe_events_filters_wrapper.tribe-events-filters-horizontal .tribe-events-filters-content {
+    display: block;
+  }
+
+  /* line 353, ../../source/css/scss/Events/_page.scss */
+  #tribe-events-content-wrapper #tribe_events_filters_wrapper.tribe-events-filters-horizontal .tribe-events-filters-group-heading {
+    padding: 15px;
+  }
+
+  /* line 356, ../../source/css/scss/Events/_page.scss */
+  #tribe-events-content-wrapper #tribe_events_filters_wrapper.tribe-events-filters-vertical #tribe_events_filters_reset {
+    margin-bottom: 0;
+  }
+
+  /* line 359, ../../source/css/scss/Events/_page.scss */
+  #tribe-events-content-wrapper #tribe_events_filters_wrapper .tribe-reset-icon {
+    line-height: 1;
+    padding-top: 2px;
+  }
+}
+/* line 364, ../../source/css/scss/Events/_page.scss */
+.fusion-events-before-title {
+  zoom: 1;
+  clear: both;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+/* line 370, ../../source/css/scss/Events/_page.scss */
+.fusion-events-before-title:after, .fusion-events-before-title:before {
+  content: " ";
+  display: table;
+}
+
+/* line 374, ../../source/css/scss/Events/_page.scss */
+.fusion-events-before-title:after {
+  clear: both;
+}
+
+/* line 377, ../../source/css/scss/Events/_page.scss */
+#wrapper .post-content .fusion-events-before-title h2 {
+  margin: 0;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* line 386, ../../source/css/scss/Events/_page.scss */
+.fusion-events-before-title .tribe-events-user-recurrence-toggle {
+  margin-top: 30px;
+}
+
+/* line 389, ../../source/css/scss/Events/_page.scss */
+.tribe-events-page-template .fusion-events-before-title .tribe-events-user-recurrence-toggle {
+  margin-top: 0;
+}
+
+/* line 392, ../../source/css/scss/Events/_page.scss */
+#tribe-events-footer .tribe-events-sub-nav, #tribe-events-header .tribe-events-sub-nav {
+  overflow: visible;
+}
+
+/* line 395, ../../source/css/scss/Events/_page.scss */
+#tribe-events-content #tribe-events-header {
+  display: none;
+  margin-bottom: 60px;
+}
+
+/* line 399, ../../source/css/scss/Events/_page.scss */
+#tribe-events-content #tribe-events-header .tribe-events-sub-nav li {
+  display: block;
+  margin-top: -45px;
+}
+
+/* line 403, ../../source/css/scss/Events/_page.scss */
+#tribe-events-content #tribe-events-header .tribe-events-sub-nav .tribe-events-nav-next a, #tribe-events-content #tribe-events-header .tribe-events-sub-nav .tribe-events-nav-previous a {
+  display: inline-block;
+}
+
+/* line 406, ../../source/css/scss/Events/_page.scss */
+#tribe-events-content .tribe-events-tooltip {
+  padding: 0;
+  z-index: 100000;
+  border: none;
+  box-shadow: 3px 4px 21px rgba(0, 0, 0, 0.38);
+}
+
+/* line 412, ../../source/css/scss/Events/_page.scss */
+#tribe-events-content .tribe-events-tooltip .tribe-events-event-body {
+  padding: 13px 22px 5px;
+}
+
+/* line 415, ../../source/css/scss/Events/_page.scss */
+#tribe-events-content .tribe-events-tooltip .entry-title, #tribe-events-content .tribe-events-tooltip .tribe-event-title {
+  padding: 12px 22px;
+  font-weight: 400;
+}
+
+/* line 419, ../../source/css/scss/Events/_page.scss */
+#tribe-events-content .tribe-events-tooltip .tribe-events-event-thumb {
+  padding-bottom: 10px;
+  padding-top: 2px;
+  max-width: 100%;
+}
+
+/* line 424, ../../source/css/scss/Events/_page.scss */
+#tribe-events-content .tribe-events-tooltip .tribe-events-arrow {
+  display: none;
+}
+
+/* line 427, ../../source/css/scss/Events/_page.scss */
+#tribe-events-content .tribe-events-tooltip.recurring-info-tooltip .tribe-events-event-body {
+  padding: 14px;
+}
+
+/* line 430, ../../source/css/scss/Events/_page.scss */
+#tribe-events-content .tribe-events-tooltip .tribe-events-event-body .description {
+  word-wrap: break-word;
+}
+
+/* line 433, ../../source/css/scss/Events/_page.scss */
+#tribe-events-content .tribe-events-tooltip .tribe-event-duration {
+  padding-bottom: 5px;
+  font-weight: 700;
+}
+
+/* line 437, ../../source/css/scss/Events/_page.scss */
+#tribe-events-content .tribe-events-tooltip.tribe-event-featured .tribe-events-event-thumb {
+  float: none;
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* line 443, ../../source/css/scss/Events/_page.scss */
+.tribe-events-tooltip .tribe-events-arrow {
+  display: none;
+}
+
+/* line 446, ../../source/css/scss/Events/_page.scss */
+.tribe-grid-allday .tribe-event-featured.tribe-events-week-allday-single a, .tribe-grid-allday .tribe-event-featured.tribe-events-week-hourly-single a, .tribe-grid-body .tribe-event-featured.tribe-events-week-allday-single a, .tribe-grid-body .tribe-event-featured.tribe-events-week-hourly-single a {
+  color: inherit;
+}
+
+/* line 449, ../../source/css/scss/Events/_page.scss */
+.tribe-events-list-separator-month {
+  text-align: left;
+  padding: 0;
+  height: 42px;
+  line-height: normal;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 18px;
+  margin: 1.25em auto 2.5em;
+}
+
+/* line 459, ../../source/css/scss/Events/_page.scss */
+.tribe-events-list-separator-month span {
+  font-weight: 400;
+  background-color: transparent;
+  padding: 0;
+  line-height: 42px;
+}
+
+/* line 465, ../../source/css/scss/Events/_page.scss */
+.tribe-events-list-separator-month:after {
+  display: none;
+}
+
+/* line 468, ../../source/css/scss/Events/_page.scss */
+#tribe-events .tribe-events-list .type-tribe_events {
+  padding: 0;
+  border: 1px solid;
+  margin-bottom: 44px;
+  min-height: 250px;
+  position: relative;
+}
+
+/* line 475, ../../source/css/scss/Events/_page.scss */
+#tribe-events .tribe-events-list .type-tribe_events .tribe-events-event-image {
+  width: 100%;
+  margin: 0;
+  min-height: 250px;
+}
+
+/* line 480, ../../source/css/scss/Events/_page.scss */
+#tribe-events .tribe-events-list .tribe-event-featured {
+  background-color: transparent;
+}
+
+/* line 483, ../../source/css/scss/Events/_page.scss */
+#tribe-events .tribe-events-list .tribe-event-featured .tribe-events-content, #tribe-events .tribe-events-list .tribe-event-featured .tribe-events-event-meta {
+  color: inherit;
+}
+
+/* line 486, ../../source/css/scss/Events/_page.scss */
+#tribe-events .tribe-events-list .tribe-event-featured a {
+  color: inherit;
+}
+
+/* line 489, ../../source/css/scss/Events/_page.scss */
+#tribe-events .tribe-events-list .fusion-tribe-events-event-image-responsive {
+  display: none;
+}
+
+/* line 492, ../../source/css/scss/Events/_page.scss */
+#tribe-events .tribe-events-list .fusion-tribe-primary-info {
+  float: left;
+  width: 40%;
+  position: relative;
+}
+
+/* line 497, ../../source/css/scss/Events/_page.scss */
+#tribe-events .tribe-events-list .fusion-tribe-primary-info .tribe-events-list-event-title {
+  z-index: 2;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* line 506, ../../source/css/scss/Events/_page.scss */
+#tribe-events .tribe-events-list .fusion-tribe-primary-info .tribe-events-list-event-title a {
+  display: block;
+  margin: 0;
+  padding: 15px 20px;
+}
+
+/* line 511, ../../source/css/scss/Events/_page.scss */
+#tribe-events .tribe-events-list .fusion-tribe-secondary-info {
+  float: right;
+  width: 60%;
+}
+
+/* line 515, ../../source/css/scss/Events/_page.scss */
+#tribe-events .tribe-events-list .fusion-tribe-secondary-info .recurringinfo {
+  display: block;
+}
+
+/* line 518, ../../source/css/scss/Events/_page.scss */
+#tribe-events .tribe-events-list .fusion-tribe-secondary-info .event-is-recurring .tribe-events-divider {
+  display: none;
+}
+
+/* line 521, ../../source/css/scss/Events/_page.scss */
+#tribe-events .tribe-events-list .tribe-events-event-cost {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* line 528, ../../source/css/scss/Events/_page.scss */
+#tribe-events .tribe-events-list .tribe-events-event-cost span {
+  border: 0;
+  padding: 10px 15px;
+}
+
+/* line 532, ../../source/css/scss/Events/_page.scss */
+#tribe-events .tribe-events-list .tribe-events-event-meta {
+  margin: 0;
+  padding: 0;
+  float: right;
+  width: 100%;
+  background: 0 0;
+  border: none;
+}
+
+/* line 540, ../../source/css/scss/Events/_page.scss */
+#tribe-events .tribe-events-list .tribe-events-event-meta .author {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+/* line 545, ../../source/css/scss/Events/_page.scss */
+#tribe-events .tribe-events-list .tribe-events-event-meta .author > div {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 15px 4.5%;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-top: none;
+}
+
+/* line 555, ../../source/css/scss/Events/_page.scss */
+#tribe-events .tribe-events-list .tribe-events-event-meta .author > div:last-child {
+  border-right: none;
+}
+
+/* line 558, ../../source/css/scss/Events/_page.scss */
+#tribe-events .tribe-events-list .tribe-events-content {
+  width: auto;
+  padding: 30px;
+}
+
+/* line 562, ../../source/css/scss/Events/_page.scss */
+#tribe-events .tribe-events-list .tribe-events-event-meta .tribe-events-gmap, #tribe-events .tribe-events-list .tribe-events-event-meta-desc .tribe-events-gmap {
+  white-space: normal;
+}
+
+/* line 565, ../../source/css/scss/Events/_page.scss */
+#tribe-events .tribe-events-list .tribe-events-gmap:before {
+  font-family: FontAwesome;
+  content: '\f041';
+  margin-right: 5px;
+}
+
+/* line 570, ../../source/css/scss/Events/_page.scss */
+#tribe-events .tribe-events-list .fusion-tribe-no-featured-image .fusion-tribe-events-headline {
+  width: 40%;
+}
+
+/* line 573, ../../source/css/scss/Events/_page.scss */
+#tribe-events .tribe-events-list .fusion-tribe-no-featured-image .fusion-tribe-events-headline h3 {
+  margin: 0;
+}
+
+/* line 576, ../../source/css/scss/Events/_page.scss */
+#tribe-events .tribe-events-list .fusion-tribe-no-featured-image .fusion-tribe-secondary-info {
+  width: 100%;
+}
+
+/* line 579, ../../source/css/scss/Events/_page.scss */
+#tribe-events .tribe-events-list .hover-type-liftup {
+  float: left;
+}
+
+/* line 582, ../../source/css/scss/Events/_page.scss */
+.tribe-events-list .tribe-events-loop .tribe-event-featured .time-details {
+  font-weight: 700;
+}
+
+/* line 585, ../../source/css/scss/Events/_page.scss */
+.tribe-events-list .tribe-events-loop .tribe-event-featured .time-details .recurringinfo {
+  font-weight: 400;
+}
+
+/* line 588, ../../source/css/scss/Events/_page.scss */
+#tribe-events .tribe-events-list .tribe-event-featured, #tribe-geo-results .tribe-event-featured .tribe-event-featured {
+  background-color: transparent;
+}
+
+/* line 591, ../../source/css/scss/Events/_page.scss */
+#tribe-events .tribe-events-list .tribe-event-featured .tribe-events-content, #tribe-events .tribe-events-list .tribe-event-featured .tribe-events-event-meta, #tribe-geo-results .tribe-event-featured .tribe-event-featured .tribe-events-content, #tribe-geo-results .tribe-event-featured .tribe-event-featured .tribe-events-event-meta {
+  color: inherit;
+}
+
+/* line 594, ../../source/css/scss/Events/_page.scss */
+#tribe-events .tribe-events-list .tribe-event-featured a, #tribe-geo-results .tribe-event-featured .tribe-event-featured a {
+  color: inherit;
+}
+
+/* line 597, ../../source/css/scss/Events/_page.scss */
+#tribe-geo-results .tribe-event-featured {
+  color: inherit;
+}
+
+/* line 600, ../../source/css/scss/Events/_page.scss */
+#tribe-events .tribe-events-list-separator-month + .type-tribe_events {
+  border-top: 1px solid;
+}
+
+/* line 603, ../../source/css/scss/Events/_page.scss */
+.tribe-events-list-event-description .fusion-read-more {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* line 607, ../../source/css/scss/Events/_page.scss */
+.type-tribe_events .fusion-tribe-primary-info .hover-type-liftup {
+  width: 100%;
+}
+
+/* line 610, ../../source/css/scss/Events/_page.scss */
+.type-tribe_events .fusion-tribe-secondary-info .date-end, .type-tribe_events .fusion-tribe-secondary-info .end-time {
+  display: inline;
+}
+
+/* line 613, ../../source/css/scss/Events/_page.scss */
+.tribe-events-list .time-details, .tribe-events-list .tribe-events-venue-details {
+  line-height: 1.5;
+}
+
+/* line 616, ../../source/css/scss/Events/_page.scss */
+.tribe-events-list .tribe-events-venue-details {
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* line 620, ../../source/css/scss/Events/_page.scss */
+.tribe-events-list .tribe-events-venue-details .tribe-country-name {
+  display: block;
+}
+
+/* line 623, ../../source/css/scss/Events/_page.scss */
+#tribe-events .tribe-events-day .tribe-events-content {
+  display: inline-block;
+  float: none;
+}
+
+/* line 627, ../../source/css/scss/Events/_page.scss */
+#tribe-events .tribe-events-day .type-tribe_events {
+  margin: 0 0 44px;
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+
+/* line 632, ../../source/css/scss/Events/_page.scss */
+#tribe-events .tribe-events-day .tribe-events-day-time-slot .type-tribe_events:last-child {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+/* line 636, ../../source/css/scss/Events/_page.scss */
+#tribe-events .tribe-events-day .tribe-events-day-time-slot h5 {
+  text-align: left;
+  padding: 0;
+  height: 42px;
+  line-height: 42px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 1.25em auto 2.5em;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/* line 647, ../../source/css/scss/Events/_page.scss */
+#tribe-events .fusion-blog-layout-grid .fusion-post-slideshow .slides {
+  overflow: visible;
+}
+
+/* line 650, ../../source/css/scss/Events/_page.scss */
+#tribe-events-content table.tribe-events-calendar {
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+
+/* line 654, ../../source/css/scss/Events/_page.scss */
+.tribe-events-calendar thead th {
+  border-left: 0;
+  border-right: 0;
+  padding: 1.5em 0;
+}
+
+/* line 659, ../../source/css/scss/Events/_page.scss */
+.datepicker.dropdown-menu {
+  border-radius: 0;
+  border: 0;
+  padding: 15px;
+}
+
+/* line 664, ../../source/css/scss/Events/_page.scss */
+.datepicker.dropdown-menu:before {
+  border-bottom: 0;
+}
+
+/* line 667, ../../source/css/scss/Events/_page.scss */
+.datepicker.dropdown-menu thead tr:first-child {
+  font-size: 16px;
+}
+
+/* line 670, ../../source/css/scss/Events/_page.scss */
+.datepicker.dropdown-menu td, .datepicker.dropdown-menu th {
+  border-radius: 0;
+  border: 0;
+  padding: 9px 10px;
+}
+
+/* line 675, ../../source/css/scss/Events/_page.scss */
+.datepicker.dropdown-menu td.active, .datepicker.dropdown-menu td.active:hover {
+  border: 0;
+  text-shadow: none;
+}
+
+/* line 679, ../../source/css/scss/Events/_page.scss */
+.datepicker.dropdown-menu table tr td.new, .datepicker.dropdown-menu table tr td.old {
+  background-color: #fff !important;
+  color: #999 !important;
+}
+
+/* line 683, ../../source/css/scss/Events/_page.scss */
+.datepicker.dropdown-menu tbody td {
+  border: 1px solid #fff;
+}
+
+/* line 686, ../../source/css/scss/Events/_page.scss */
+.datepicker.dropdown-menu .datepicker-months td {
+  padding: 15px 0 0;
+}
+
+/* line 689, ../../source/css/scss/Events/_page.scss */
+.datepicker.dropdown-menu .datepicker-months span {
+  text-shadow: none;
+}
+
+/* line 692, ../../source/css/scss/Events/_page.scss */
+.datepicker.dropdown-menu .datepicker-months span:hover {
+  text-shadow: none;
+}
+
+/* line 695, ../../source/css/scss/Events/_page.scss */
+.fusion-events-featured-image {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 50px;
+  max-width: 100%;
+}
+
+/* line 701, ../../source/css/scss/Events/_page.scss */
+.fusion-events-featured-image .hover-type-liftup {
+  display: block;
+}
+
+/* line 704, ../../source/css/scss/Events/_page.scss */
+.fusion-events-featured-image .tribe-events-event-image {
+  margin: 0;
+}
+
+/* line 707, ../../source/css/scss/Events/_page.scss */
+.fusion-events-featured-image .fusion-events-single-title-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  padding: 15px 20px;
+  z-index: 1;
+}
+
+/* line 727, ../../source/css/scss/Events/_page.scss */
+.fusion-events-featured-image .fusion-events-single-title-content h2 {
+  float: none;
+  line-height: normal;
+}
+
+/* line 731, ../../source/css/scss/Events/_page.scss */
+.fusion-events-featured-image .fusion-events-single-title-content .tribe-events-schedule {
+  margin: 0;
+  padding: 0;
+  float: none;
+  background: 0 0;
+  border: none;
+}
+
+/* line 738, ../../source/css/scss/Events/_page.scss */
+.fusion-events-featured-image .fusion-events-single-title-content .tribe-events-schedule h3 {
+  font-size: 16px;
+  line-height: normal;
+}
+
+/* line 742, ../../source/css/scss/Events/_page.scss */
+.fusion-events-featured-image .fusion-events-single-title-content .event-is-recurring:hover, .fusion-events-featured-image .fusion-events-single-title-content a:hover {
+  opacity: 0.7;
+}
+
+/* line 745, ../../source/css/scss/Events/_page.scss */
+.single-tribe_events #tribe-events-content .fusion-events-featured-image .updated {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+/* line 756, ../../source/css/scss/Events/_page.scss */
+.single-tribe_events .fusion-events-featured-image .recurringinfo {
+  margin-right: 0;
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 400;
+}
+
+/* line 762, ../../source/css/scss/Events/_page.scss */
+.single-tribe_events .fusion-events-featured-image .recurringinfo .event-is-recurring {
+  font-weight: 400;
+}
+
+/* line 765, ../../source/css/scss/Events/_page.scss */
+.single-tribe_events .fusion-events-featured-image .tribe-events-cost, .single-tribe_events .fusion-events-featured-image .tribe-events-divider {
+  line-height: normal;
+  font-size: 16px;
+}
+
+/* line 769, ../../source/css/scss/Events/_page.scss */
+.fusion-events-single-title {
+  display: block;
+}
+
+/* line 772, ../../source/css/scss/Events/_page.scss */
+.fusion-events-single-title .fusion-events-single-title-content {
+  position: static;
+}
+
+/* line 775, ../../source/css/scss/Events/_page.scss */
+.single-tribe_events .tribe-events-schedule .recurringinfo .tribe-events-divider {
+  display: inline-block;
+}
+
+/* line 778, ../../source/css/scss/Events/_page.scss */
+.single-tribe_events .tribe-events-schedule .tribe-events-divider {
+  padding: 0 10px;
+  display: block;
+}
+
+/* line 782, ../../source/css/scss/Events/_page.scss */
+.single-tribe_events #main .sidebar.fusion-sticky-sidebar {
+  padding: 0;
+}
+
+/* line 785, ../../source/css/scss/Events/_page.scss */
+#tribe-events-content #tribe-events-footer {
+  overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-top: 50px;
+}
+
+/* line 793, ../../source/css/scss/Events/_page.scss */
+.single-tribe_events .tribe-events-single-section {
+  background: 0 0;
+  border: none;
+  margin: 0;
+}
+
+/* line 798, ../../source/css/scss/Events/_page.scss */
+.single-tribe_events .tribe-events-cal-links {
+  margin-bottom: 0;
+}
+
+/* line 801, ../../source/css/scss/Events/_page.scss */
+.single-tribe_events .sidebar .tribe-events-venue-map {
+  width: 100%;
+}
+
+/* line 804, ../../source/css/scss/Events/_page.scss */
+.single-tribe_events .tribe-events-notices {
+  margin-top: 0;
+}
+
+/* line 807, ../../source/css/scss/Events/_page.scss */
+.single-tribe_events ul.tribe-related-events > li {
+  margin-right: 3.5%;
+  width: 31%;
+  border: none;
+  background: 0 0;
+}
+
+/* line 813, ../../source/css/scss/Events/_page.scss */
+.single-tribe_events ul.tribe-related-events > li:last-child {
+  margin-right: 0;
+}
+
+/* line 816, ../../source/css/scss/Events/_page.scss */
+.single-tribe_events ul.tribe-related-events .tribe-related-events-title {
+  font-weight: 400;
+}
+
+/* line 819, ../../source/css/scss/Events/_page.scss */
+.single-tribe_events ul.tribe-related-events li .tribe-related-event-info {
+  line-height: 1.5;
+  padding: 1em 0 0;
+}
+
+/* line 823, ../../source/css/scss/Events/_page.scss */
+.sidebar .single-related-posts {
+  display: none;
+}
+
+/* line 826, ../../source/css/scss/Events/_page.scss */
+.sidebar .tribe-events-meta-group {
+  width: 100%;
+  float: none;
+  margin: 0 0 45px;
+  padding: 0;
+}
+
+/* line 832, ../../source/css/scss/Events/_page.scss */
+.sidebar .tribe-events-meta-group dt {
+  float: none;
+  margin: 0;
+  font-weight: 700;
+}
+
+/* line 837, ../../source/css/scss/Events/_page.scss */
+.sidebar .tribe-events-meta-group dd {
+  float: none;
+  margin: 0;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+/* line 845, ../../source/css/scss/Events/_page.scss */
+.sidebar .tribe-events-meta-group dl:last-child {
+  border-bottom: 0;
+}
+
+/* line 848, ../../source/css/scss/Events/_page.scss */
+.tribe-events-meta-group .url a {
+  word-wrap: break-word;
+}
+
+/* line 851, ../../source/css/scss/Events/_page.scss */
+.tribe-events-meta-group .email {
+  word-wrap: break-word;
+}
+
+/* line 854, ../../source/css/scss/Events/_page.scss */
+.sidebar .tribe-events-single-section-title {
+  margin: 0 0 18px;
+}
+
+/* line 857, ../../source/css/scss/Events/_page.scss */
+.sidebar .tribe-events-venue-map {
+  width: 100%;
+  margin: -45px 0 45px;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+}
+
+/* line 864, ../../source/css/scss/Events/_page.scss */
+.sidebar .tribe-events-gmap {
+  display: block;
+  font-style: normal;
+  position: relative;
+}
+
+/* line 869, ../../source/css/scss/Events/_page.scss */
+.sidebar .tribe-events-gmap::first-letter {
+  color: transparent;
+}
+
+/* line 872, ../../source/css/scss/Events/_page.scss */
+.sidebar .tribe-events-gmap:after {
+  font-family: FontAwesome;
+  content: '\f041';
+  margin-right: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 880, ../../source/css/scss/Events/_page.scss */
+#slidingbar-area .tribe-events-list-widget ol, .fusion-footer .tribe-events-list-widget ol, .post-content .tribe-events-list-widget ol, .sidebar .tribe-events-list-widget ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 885, ../../source/css/scss/Events/_page.scss */
+#slidingbar-area .tribe-events-list-widget ol :first-child, .fusion-footer .tribe-events-list-widget ol :first-child, .post-content .tribe-events-list-widget ol :first-child, .sidebar .tribe-events-list-widget ol :first-child {
+  padding-top: 0;
+}
+
+/* line 888, ../../source/css/scss/Events/_page.scss */
+#slidingbar-area .tribe-events-list-widget ol li, .fusion-footer .tribe-events-list-widget ol li, .post-content .tribe-events-list-widget ol li, .sidebar .tribe-events-list-widget ol li {
+  overflow: hidden;
+  margin: 0;
+  padding: 20px 0;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+/* line 895, ../../source/css/scss/Events/_page.scss */
+#slidingbar-area .tribe-events-list-widget ol li .tribe-events-event-image, .fusion-footer .tribe-events-list-widget ol li .tribe-events-event-image, .post-content .tribe-events-list-widget ol li .tribe-events-event-image, .sidebar .tribe-events-list-widget ol li .tribe-events-event-image {
+  float: left;
+  margin: 0 13px 0 0;
+}
+
+/* line 899, ../../source/css/scss/Events/_page.scss */
+#slidingbar-area .tribe-events-list-widget ol li h4, .fusion-footer .tribe-events-list-widget ol li h4, .post-content .tribe-events-list-widget ol li h4, .sidebar .tribe-events-list-widget ol li h4 {
+  margin: 0;
+}
+
+/* line 902, ../../source/css/scss/Events/_page.scss */
+#slidingbar-area .tribe-events-venue-widget ul, .fusion-footer .tribe-events-venue-widget ul, .post-content .tribe-events-venue-widget ul, .sidebar .tribe-events-venue-widget ul {
+  margin-bottom: 13px;
+}
+
+/* line 905, ../../source/css/scss/Events/_page.scss */
+#slidingbar-area .tribe-events-venue-widget ul :first-child, .fusion-footer .tribe-events-venue-widget ul :first-child, .post-content .tribe-events-venue-widget ul :first-child, .sidebar .tribe-events-venue-widget ul :first-child {
+  padding-top: 0;
+}
+
+/* line 908, ../../source/css/scss/Events/_page.scss */
+#slidingbar-area .tribe-events-venue-widget li, .fusion-footer .tribe-events-venue-widget li, .post-content .tribe-events-venue-widget li, .sidebar .tribe-events-venue-widget li {
+  overflow: hidden;
+  margin: 0;
+  padding: 15px 0;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+/* line 915, ../../source/css/scss/Events/_page.scss */
+#slidingbar-area .tribe-events-venue-widget li h4, .fusion-footer .tribe-events-venue-widget li h4, .post-content .tribe-events-venue-widget li h4, .sidebar .tribe-events-venue-widget li h4 {
+  margin: 0 0 5px;
+}
+
+/* line 918, ../../source/css/scss/Events/_page.scss */
+.tribe-events-adv-list-widget .duration, .tribe-events-list-widget .duration {
+  display: inline-block;
+  margin-top: 5px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+/* line 924, ../../source/css/scss/Events/_page.scss */
+.tribe-events-adv-list-widget .tribe-events-widget-link a, .tribe-events-list-widget .tribe-events-widget-link a {
+  font-weight: 400;
+}
+
+/* line 927, ../../source/css/scss/Events/_page.scss */
+.tribe-events-list-widget li.tribe-events-list-widget-events {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 932, ../../source/css/scss/Events/_page.scss */
+.tribe-mini-calendar-event {
+  overflow: hidden;
+  margin: 0;
+  padding: 20px 0;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+/* line 939, ../../source/css/scss/Events/_page.scss */
+.tribe-mini-calendar-event .list-date, .tribe-mini-calendar-event .list-info {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* line 943, ../../source/css/scss/Events/_page.scss */
+.tribe-mini-calendar-event .list-info {
+  line-height: 1.4em;
+}
+
+/* line 946, ../../source/css/scss/Events/_page.scss */
+.tribe-mini-calendar-event .list-info h2 {
+  margin-bottom: 0;
+}
+
+/* line 949, ../../source/css/scss/Events/_page.scss */
+.tribe-mini-calendar-event .list-info .tribe-events-duration {
+  margin-top: 5px;
+}
+
+/* line 952, ../../source/css/scss/Events/_page.scss */
+.tribe-mini-calendar-event .vcard {
+  line-height: 20px;
+  margin-top: 10px;
+}
+
+/* line 956, ../../source/css/scss/Events/_page.scss */
+.tribe-events-adv-list-widget :nth-child(2) .tribe-mini-calendar-event {
+  padding-top: 0;
+}
+
+/* line 959, ../../source/css/scss/Events/_page.scss */
+.tribe-events-venue-widget .tribe-venue-widget-thumbnail {
+  position: relative;
+}
+
+/* line 962, ../../source/css/scss/Events/_page.scss */
+.tribe-events-venue-widget .tribe-venue-widget-thumbnail .tribe-venue-widget-venue-name {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+}
+
+/* line 969, ../../source/css/scss/Events/_page.scss */
+.tribe-events-venue-widget ul li a {
+  padding: 0;
+  border: 0;
+}
+
+/* line 973, ../../source/css/scss/Events/_page.scss */
+.tribe-events-venue-widget .tribe-venue-widget-venue-name {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+}
+
+/* line 978, ../../source/css/scss/Events/_page.scss */
+.tribe-events-venue-widget .tribe-venue-widget-venue-name h3 {
+  margin: 0;
+}
+
+/* line 981, ../../source/css/scss/Events/_page.scss */
+.tribe-events-venue-widget .tribe-venue-widget-venue-name a {
+  font-weight: 400;
+}
+
+/* line 984, ../../source/css/scss/Events/_page.scss */
+.tribe-events-venue-widget .tribe-venue-widget-venue-name a:hover {
+  opacity: 0.7;
+}
+
+/* line 987, ../../source/css/scss/Events/_page.scss */
+.tribe-mini-calendar {
+  line-height: normal;
+}
+
+/* line 990, ../../source/css/scss/Events/_page.scss */
+.tribe-mini-calendar thead {
+  background-color: transparent;
+  border: none;
+}
+
+/* line 994, ../../source/css/scss/Events/_page.scss */
+.tribe-mini-calendar td, .tribe-mini-calendar th {
+  border: 0;
+  padding: 0;
+  transition: none !important;
+}
+
+/* line 999, ../../source/css/scss/Events/_page.scss */
+.tribe-mini-calendar td {
+  background-color: transparent;
+}
+
+/* line 1002, ../../source/css/scss/Events/_page.scss */
+.tribe-mini-calendar .tribe-mini-calendar-nav td {
+  padding: 10px;
+  border: none;
+}
+
+/* line 1006, ../../source/css/scss/Events/_page.scss */
+.tribe-mini-calendar .tribe-mini-calendar-nav td a, .tribe-mini-calendar .tribe-mini-calendar-nav td span {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* line 1010, ../../source/css/scss/Events/_page.scss */
+.tribe-mini-calendar .tribe-mini-calendar-nav td span {
+  text-transform: initial;
+}
+
+/* line 1013, ../../source/css/scss/Events/_page.scss */
+.tribe-mini-calendar .tribe-mini-calendar-nav-link.prev-month {
+  float: left;
+}
+
+/* line 1016, ../../source/css/scss/Events/_page.scss */
+.tribe-mini-calendar .tribe-mini-calendar-nav-link.next-month {
+  float: right;
+}
+
+/* line 1019, ../../source/css/scss/Events/_page.scss */
+.tribe-mini-calendar .tribe-mini-calendar-month, .tribe-mini-calendar .tribe-mini-calendar-nav-link.next-month, .tribe-mini-calendar .tribe-mini-calendar-nav-link.prev-month {
+  padding: 0;
+}
+
+/* line 1022, ../../source/css/scss/Events/_page.scss */
+.tribe-mini-calendar .tribe-mini-calendar-dayofweek {
+  background-color: transparent;
+  padding: 10px;
+  border: 0;
+}
+
+/* line 1027, ../../source/css/scss/Events/_page.scss */
+.tribe-mini-calendar .tribe-events-present, .tribe-mini-calendar .tribe-mini-calendar-today, .tribe-mini-calendar td.tribe-events-has-events, .tribe-mini-calendar td.tribe-events-has-events.tribe-events-present, .tribe-mini-calendar td.tribe-events-has-events.tribe-mini-calendar-today {
+  background: 0 0;
+}
+
+/* line 1030, ../../source/css/scss/Events/_page.scss */
+.fusion-body .tribe-mini-calendar td.tribe-events-has-events {
+  background-color: #222;
+}
+
+/* line 1033, ../../source/css/scss/Events/_page.scss */
+.fusion-body .tribe-mini-calendar td.tribe-events-has-events.tribe-events-othermonth {
+  background-color: #999;
+}
+
+/* line 1036, ../../source/css/scss/Events/_page.scss */
+.fusion-body .tribe-mini-calendar td.tribe-events-has-events.tribe-events-othermonth a {
+  color: #555;
+}
+
+/* line 1039, ../../source/css/scss/Events/_page.scss */
+.tribe-mini-calendar td.tribe-events-has-events div[id*=daynum-] a {
+  font-weight: 400;
+}
+
+/* line 1042, ../../source/css/scss/Events/_page.scss */
+.tribe-mini-calendar td.tribe-events-has-events div[id*=daynum-] a:before {
+  display: none;
+}
+
+/* line 1045, ../../source/css/scss/Events/_page.scss */
+.tribe-mini-calendar .tribe-mini-calendar-no-event, .tribe-mini-calendar td.tribe-events-has-events div[id*=daynum-] a {
+  padding: 10px;
+}
+
+/* line 1048, ../../source/css/scss/Events/_page.scss */
+.tribe-mini-calendar .tribe-mini-calendar-no-event {
+  background-color: transparent;
+  font-weight: 400;
+}
+
+/* line 1052, ../../source/css/scss/Events/_page.scss */
+.tribe-mini-calendar .tribe-events-past {
+  background-color: transparent;
+  opacity: 1;
+}
+
+/* line 1056, ../../source/css/scss/Events/_page.scss */
+.tribe-mini-calendar .tribe-events-has-events.tribe-mini-calendar-today:hover, .tribe-mini-calendar .tribe-events-has-events:hover {
+  background-color: transparent;
+}
+
+/* line 1059, ../../source/css/scss/Events/_page.scss */
+.fusion-body .tribe-mini-calendar .tribe-events-has-events:hover a:hover {
+  background-color: transparent;
+}
+
+/* line 1062, ../../source/css/scss/Events/_page.scss */
+.tribe-mini-calendar .tribe-events-othermonth, .tribe-mini-calendar .tribe-events-othermonth div[id*=daynum-] a, .tribe-mini-calendar .tribe-events-othermonth div[id*=daynum-] span {
+  background-color: transparent;
+  color: #999;
+}
+
+/* line 1066, ../../source/css/scss/Events/_page.scss */
+.tribe-events-countdown-widget .tribe-countdown-text {
+  margin: 0;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* line 1074, ../../source/css/scss/Events/_page.scss */
+.tribe-events-countdown-widget .tribe-countdown-text a {
+  font-weight: 400;
+}
+
+/* line 1077, ../../source/css/scss/Events/_page.scss */
+.tribe-events-countdown-widget .tribe-countdown-text a:hover {
+  opacity: 0.7;
+}
+
+/* line 1080, ../../source/css/scss/Events/_page.scss */
+.tribe-events-countdown-widget .tribe-countdown-timer {
+  display: block;
+  padding: 0 20px 20px;
+}
+
+/* line 1084, ../../source/css/scss/Events/_page.scss */
+.tribe-events-countdown-widget .tribe-countdown-timer {
+  line-height: normal;
+  padding-top: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* line 1103, ../../source/css/scss/Events/_page.scss */
+.tribe-events-countdown-widget .tribe-countdown-timer .tribe-countdown-number {
+  float: none;
+  padding: 12px 10px;
+  margin-right: 5px;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+/* line 1111, ../../source/css/scss/Events/_page.scss */
+.tribe-events-countdown-widget .tribe-countdown-timer :last-child {
+  margin-right: 0;
+}
+
+/* line 1114, ../../source/css/scss/Events/_page.scss */
+.tribe-events-countdown-widget .tribe-countdown-timer .fusion-tribe-counterdown-over {
+  display: block;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+/* line 1119, ../../source/css/scss/Events/_page.scss */
+.tribe-events-countdown-widget .tribe-countdown-timer .tribe-countdown-under {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+/* line 1124, ../../source/css/scss/Events/_page.scss */
+#wrapper .tribe-events-widget-link {
+  margin: 13px 0 0;
+}
+
+/* line 1127, ../../source/css/scss/Events/_page.scss */
+.tribe-events-sub-nav .tribe-events-nav-next a, .tribe-events-sub-nav .tribe-events-nav-previous a {
+  display: inline-block;
+  padding: 0;
+  margin-bottom: 0;
+  background: 0 0;
+  font-weight: 400;
+}
+
+/* line 1134, ../../source/css/scss/Events/_page.scss */
+.tribe-events-sub-nav .tribe-events-nav-next a span, .tribe-events-sub-nav .tribe-events-nav-previous a span {
+  display: none;
+}
+
+/* line 1137, ../../source/css/scss/Events/_page.scss */
+.tribe-events-nav-left a, .tribe-events-nav-previous a {
+  position: relative;
+  margin-left: 10px;
+}
+
+/* line 1141, ../../source/css/scss/Events/_page.scss */
+.tribe-events-nav-left a:before, .tribe-events-nav-previous a:before {
+  font-family: icomoon;
+  content: '\f104';
+  margin-right: 6px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: -10px;
+}
+
+/* line 1152, ../../source/css/scss/Events/_page.scss */
+.tribe-events-nav-next a, .tribe-events-nav-right a {
+  position: relative;
+  margin-right: 10px;
+}
+
+/* line 1156, ../../source/css/scss/Events/_page.scss */
+.tribe-events-nav-next a:after, .tribe-events-nav-right a:after {
+  font-family: icomoon;
+  content: '\f105';
+  margin-left: 6px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: -10px;
+}
+
+/* line 1167, ../../source/css/scss/Events/_page.scss */
+.tribe-events-nav-left a:after {
+  display: none;
+}
+
+/* line 1170, ../../source/css/scss/Events/_page.scss */
+.tribe-events-nav-right a:before {
+  display: none;
+}
+
+/* line 1173, ../../source/css/scss/Events/_page.scss */
+.tribe-events-tooltip:after, .tribe-events-tooltip:before {
+  top: 100%;
+  left: 10%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+/* line 1183, ../../source/css/scss/Events/_page.scss */
+.tribe-events-tooltip:after {
+  border-color: transparent;
+  border-top-color: #ffff;
+  border-width: 5px;
+  margin-left: -5px;
+}
+
+/* line 1189, ../../source/css/scss/Events/_page.scss */
+.tribe-events-tooltip:before {
+  border-color: rgba(245, 245, 245, 0);
+  border-top-color: #000;
+  border-width: 9px;
+  margin-left: -9px;
+}
+
+/* line 1195, ../../source/css/scss/Events/_page.scss */
+.tribe-events-right .tribe-events-tooltip:after, .tribe-events-right .tribe-events-tooltip:before {
+  top: 100%;
+  left: 90%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+/* line 1205, ../../source/css/scss/Events/_page.scss */
+.tribe-events-right .tribe-events-tooltip:after {
+  border-color: transparent;
+  border-top-color: #ffff;
+  border-width: 5px;
+  margin-left: -5px;
+}
+
+/* line 1211, ../../source/css/scss/Events/_page.scss */
+.tribe-events-right .tribe-events-tooltip:before {
+  border-color: rgba(245, 245, 245, 0);
+  border-top-color: #000;
+  border-width: 9px;
+  margin-left: -9px;
+}
+
+/* line 1217, ../../source/css/scss/Events/_page.scss */
+.tribe-grid-body .tribe-events-tooltip:after, .tribe-grid-body .tribe-events-tooltip:before {
+  right: 100%;
+  top: 50%;
+  left: auto;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+/* line 1228, ../../source/css/scss/Events/_page.scss */
+.tribe-grid-body .tribe-events-tooltip:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-right-color: #fff;
+  border-width: 5px;
+  margin-top: -5px;
+}
+
+/* line 1234, ../../source/css/scss/Events/_page.scss */
+.tribe-grid-body .tribe-events-tooltip:before {
+  border-color: rgba(255, 255, 255, 0);
+  border-right-color: #fff;
+  border-width: 12px;
+  margin-top: -12px;
+}
+
+/* line 1240, ../../source/css/scss/Events/_page.scss */
+.tribe-grid-body .tribe-events-right .tribe-events-tooltip:after, .tribe-grid-body .tribe-events-right .tribe-events-tooltip:before {
+  left: 100%;
+  top: 50%;
+  right: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+/* line 1251, ../../source/css/scss/Events/_page.scss */
+.tribe-grid-body .tribe-events-right .tribe-events-tooltip:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-left-color: #fff;
+  border-width: 5px;
+  margin-top: -5px;
+}
+
+/* line 1257, ../../source/css/scss/Events/_page.scss */
+.tribe-grid-body .tribe-events-right .tribe-events-tooltip:before {
+  border-color: rgba(255, 255, 255, 0);
+  border-left-color: #fff;
+  border-width: 18px;
+  margin-top: -18px;
+}
+
+/* line 1263, ../../source/css/scss/Events/_page.scss */
+.fusion-body.single-tribe_events #tribe-events-content form.cart {
+  margin: 60px 0;
+}
+
+/* line 1266, ../../source/css/scss/Events/_page.scss */
+.tribe-attendees-list-container, .tribe-link-tickets-message {
+  margin-top: 60px;
+}
+
+/* line 1268, ../../source/css/scss/Events/_page.scss */
+table.tribe-events-tickets {
+  table-layout: fixed;
+}
+
+/* line 1270, ../../source/css/scss/Events/_page.scss */
+table.tribe-events-tickets > tbody {
+  border: 1px solid;
+}
+
+/* line 1272, ../../source/css/scss/Events/_page.scss */
+table.tribe-events-tickets .button {
+  margin-top: 10px;
+}
+
+/* line 1275, ../../source/css/scss/Events/_page.scss */
+.fusion-body table.tribe-events-tickets .button {
+  margin-left: 0;
+}
+
+/* line 1277, ../../source/css/scss/Events/_page.scss */
+table.tribe-events-tickets tr td {
+  display: table-cell;
+  border: 1px solid;
+}
+
+/* line 1281, ../../source/css/scss/Events/_page.scss */
+.fusion-body table.tribe-events-tickets tr td {
+  padding: 15px 20px;
+}
+
+/* line 1283, ../../source/css/scss/Events/_page.scss */
+table.tribe-events-tickets tr .woocommerce {
+  width: 25%;
+  border-bottom: 1px solid;
+}
+
+/* line 1286, ../../source/css/scss/Events/_page.scss */
+table.tribe-events-tickets tr .tickets_name {
+  width: 19%;
+}
+
+/* line 1288, ../../source/css/scss/Events/_page.scss */
+table.tribe-events-tickets tr .tickets_price {
+  width: 16%;
+}
+
+/* line 1290, ../../source/css/scss/Events/_page.scss */
+table.tribe-events-tickets tr .tickets_price .amount {
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+/* line 1293, ../../source/css/scss/Events/_page.scss */
+table.tribe-events-tickets tr .tickets_description {
+  width: 40%;
+}
+
+/* line 1295, ../../source/css/scss/Events/_page.scss */
+table.tribe-events-tickets tr .quantity.buttons_added input, table.tribe-events-tickets tr .quantity.tribe-ticket input {
+  margin-bottom: 0;
+}
+
+/* line 1297, ../../source/css/scss/Events/_page.scss */
+table.tribe-events-tickets tr .woocommerce .quantity input {
+  text-align: center;
+}
+
+/* line 1299, ../../source/css/scss/Events/_page.scss */
+table.tribe-events-tickets tr td.add-to-cart .tribe-button {
+  margin: 0;
+}
+
+/* line 1301, ../../source/css/scss/Events/_page.scss */
+table.tribe-events-tickets tr .tribe-ticket-quantity {
+  -moz-appearance: textfield;
+}
+
+/* line 1303, ../../source/css/scss/Events/_page.scss */
+table.tribe-events-tickets tr .tribe-ticket-quantity::-webkit-inner-spin-button, table.tribe-events-tickets tr .tribe-ticket-quantity::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* line 1306, ../../source/css/scss/Events/_page.scss */
+table.tribe-events-tickets tr .tribe-tickets-attendees {
+  padding-top: 10px;
+}
+
+/* line 1308, ../../source/css/scss/Events/_page.scss */
+table.tribe-events-tickets tr .tribe-tickets-remaining {
+  display: block;
+  margin-top: 3px;
+}
+
+/* line 1311, ../../source/css/scss/Events/_page.scss */
+table.tribe-events-tickets-rsvp tr .tickets_description, table.tribe-events-tickets-rsvp tr .tickets_name, table.tribe-events-tickets-rsvp tr .tribe-ticket {
+  width: 30%;
+  padding: 15px 20px;
+}
+
+/* line 1314, ../../source/css/scss/Events/_page.scss */
+table.tribe-events-tickets-rsvp tr .tribe-ticket.quantity {
+  display: table-cell;
+  padding: 15px 20px;
+}
+
+/* line 1317, ../../source/css/scss/Events/_page.scss */
+table.tribe-events-tickets-rsvp tr .tribe-ticket.quantity input.tribe-ticket-quantity {
+  margin-bottom: 0;
+}
+
+/* line 1319, ../../source/css/scss/Events/_page.scss */
+table.tribe-events-tickets-rsvp tr .tickets_description {
+  width: 40%;
+}
+
+/* line 1321, ../../source/css/scss/Events/_page.scss */
+table.tribe-events-tickets-rsvp .tribe-tickets-attendees header {
+  margin-bottom: 5px;
+}
+
+/* line 1323, ../../source/css/scss/Events/_page.scss */
+table.tribe-events-tickets-rsvp .tribe-tickets-table {
+  border: none;
+}
+
+/* line 1325, ../../source/css/scss/Events/_page.scss */
+table.tribe-events-tickets-rsvp .tribe-tickets-table .tribe-tickets-order_status-row select {
+  width: 100%;
+}
+
+/* line 1328, ../../source/css/scss/Events/_page.scss */
+.fusion-body table.tribe-events-tickets-rsvp .tribe-tickets-table td {
+  padding: 5px 5px 0 0;
+  border: none;
+}
+
+/* line 1332, ../../source/css/scss/Events/_page.scss */
+#tribe-events .tickets-unavailable {
+  margin-top: 30px;
+}
+
+/* line 1335, ../../source/css/scss/Events/_page.scss */
+.tribe-events-address .tribe-address .tribe-country-name, .tribe-events-address .tribe-address .tribe-delimiter, .tribe-events-address .tribe-address .tribe-events-abbr, .tribe-events-address .tribe-address .tribe-postal-code, .tribe-events-address .tribe-address .tribe-region {
+  padding-right: 0.4em;
+}
+
+/* line 1338, ../../source/css/scss/Events/_page.scss */
+.rtl .tribe-events-address .tribe-address .tribe-country-name, .rtl .tribe-events-address .tribe-address .tribe-delimiter, .rtl .tribe-events-address .tribe-address .tribe-events-abbr, .rtl .tribe-events-address .tribe-address .tribe-postal-code, .rtl .tribe-events-address .tribe-address .tribe-region {
+  padding-right: 0;
+  padding-left: 0.4em;
+}
+
+/* line 1342, ../../source/css/scss/Events/_page.scss */
+#tribe-bar-form .tribe-bar-submit input[type=submit], #tribe-events .tribe-events-button, #tribe-events .tribe-events-tickets .add-to-cart .tribe-button, #tribe_events_filter_control #tribe_events_filters_reset, #tribe_events_filter_control #tribe_events_filters_toggle {
+  font-weight: 700;
+}
+
+/* line 1354, ../../source/css/scss/Events/_page.scss */
+.tribe-wrapper-aside {
+  margin: 0;
+  padding: 0;
+  background: #FFFEEC;
+}
+
+/* line 1361, ../../source/css/scss/Events/_page.scss */
+div.tribe-wrapper-aside aside#secondary.widget-area,
+div.tribe-wrapper-aside div.tribe-events-single-section.tribe-events-event-meta.primary.tribe-clearfix div.tribe-events-meta-group.tribe-events-meta-group-details {
+  width: 100%;
+  margin: 0 0 1rem 0;
+}
+
+/* line 1366, ../../source/css/scss/Events/_page.scss */
+.tribe-events-meta-group-details {
+  font-size: 1rem;
+  position: relative;
+  left: 1rem;
+  bottom: 1rem;
+}
+
+/* line 1374, ../../source/css/scss/Events/_page.scss */
+#tribe-events .tribe-events-button, .tribe-events-button {
+  background: #A0CE4E;
+}
+
+/* line 1378, ../../source/css/scss/Events/_page.scss */
+.tribe-single-event-intro-image-title, .title {
+  display: inline-block;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  background: rgba(160, 206, 78, 0.7);
+  padding: 1.5em;
+  width: 100%;
+  color: #fff;
+  font-size: 105%;
+  font-weight: bold;
+}
+/* line 1388, ../../source/css/scss/Events/_page.scss */
+.tribe-single-event-intro-image-title h1.tribe-events-single-event-title, .tribe-single-event-intro-image-title h2.tribe-events-list-event-title a, .title h1.tribe-events-single-event-title, .title h2.tribe-events-list-event-title a {
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding-bottom: 0.3em;
+}
+/* line 1394, ../../source/css/scss/Events/_page.scss */
+.tribe-single-event-intro-image-title h2.tribe-events-list-event-title a, .title h2.tribe-events-list-event-title a {
+  font-size: 100%;
+}
+
+/* line 1396, ../../source/css/scss/Events/_page.scss */
+.single-tribe_events .tribe-events-content {
+  max-width: 100%;
+  padding: 0 1.5em;
+  width: 100%;
+}
+
+/* line 1402, ../../source/css/scss/Events/_page.scss */
+#tribe-events-content, #tribe-events-content-wrapper {
+  margin-top: 3em;
+}
+
+/* line 1407, ../../source/css/scss/Events/_page.scss */
+.tribe-events-event-image img {
+  height: auto;
+  width: 100%;
+}
+
+/* line 1412, ../../source/css/scss/Events/_page.scss */
+body {
+  background-image: url("../images/homepage.jpg");
+}
+
+/* line 1421, ../../source/css/scss/Events/_page.scss */
+#tribe-events .tribe-events-list .tribe-events-event-meta .author > div {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+
+/* line 1425, ../../source/css/scss/Events/_page.scss */
+#tribe-events .tribe-events-list .type-tribe_events {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  border-top: none;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* line 1434, ../../source/css/scss/Events/_page.scss */
+.tribe-events-event-cost span.ticket-cost {
+  background: #A0CE4E;
+}
+
+/* line 1437, ../../source/css/scss/Events/_page.scss */
+.tribe-events-list-separator-month {
+  margin: 1em auto;
+}
+
+/* line 1441, ../../source/css/scss/Events/_page.scss */
+#tribe-events-content.tribe-events-list {
+  margin-bottom: 0;
+  margin-top: 2rem;
+}
+
+/* line 1447, ../../source/css/scss/Events/_page.scss */
+#custom_html-30 h3, #custom_html-30 p {
+  font-size: 95%;
+}
+
+/* line 1451, ../../source/css/scss/Events/_page.scss */
+.tribe-events-list-widget-events .tribe-events-event-image img {
+  max-width: 50px;
+  margin: 0px;
+  position: relative;
+  left: -1em;
+  text-align: left;
+}
+
+/* line 1458, ../../source/css/scss/Events/_page.scss */
+.tribe-events-list-widget-events .tribe-events-event-image {
+  margin: 0;
+  text-align: left;
+  flex-basis: 66px;
+}
+
+/* line 1464, ../../source/css/scss/Events/_page.scss */
+.tribe-events-list-widget-events a {
+  text-decoration: none;
+}
+
+/* line 1469, ../../source/css/scss/Events/_page.scss */
+.tribe-event-date-start, .tribe-event-date-end, .tribe-event-time {
+  font-size: 92%;
+  color: #000;
+}
+
+/* MOBIEL VERANDERINGEN */
+/* line 1477, ../../source/css/scss/Events/_page.scss */
+.tribe-intro-list {
+  width: 40%;
+  float: left;
+}
+
+/* line 1481, ../../source/css/scss/Events/_page.scss */
+.tribe-intro-list-image {
+  width: 100%;
+  position: relative;
+  height: 291px;
+}
+
+/* line 1486, ../../source/css/scss/Events/_page.scss */
+.tribe-content-list {
+  width: 60%;
+  float: right;
+}
+
+/* line 1490, ../../source/css/scss/Events/_page.scss */
+.tribe-events-event-meta {
+  margin-top: 0;
+}
+
+@media all and (max-width: 677px) {
+  /* line 1496, ../../source/css/scss/Events/_page.scss */
+  .tribe-event-schedule-details, .tribe-events-venue-details, .tribe-events-event-venue-details {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* line 1504, ../../source/css/scss/Events/_page.scss */
+  .tribe-content-list {
+    width: 100%;
+  }
+
+  /* line 1508, ../../source/css/scss/Events/_page.scss */
+  .tribe-intro-list {
+    width: 100%;
+  }
+
+  /* line 1511, ../../source/css/scss/Events/_page.scss */
+  #tribe-events .tribe-events-list .tribe-events-event-meta .author > div {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    display: block;
+    margin: 0;
+    padding: 0.7em;
+  }
+}
+/* line 1524, ../../source/css/scss/Events/_page.scss */
+.tribe-single-event-main {
+  width: 70%;
+  float: left;
+}
+
+/* line 1528, ../../source/css/scss/Events/_page.scss */
+.tribe-single-event-intro {
+  width: 100%;
+}
+
+/* line 1531, ../../source/css/scss/Events/_page.scss */
+.tribe-single-event-intro-image {
+  width: 90%;
+  margin: 0 auto 2rem;
+  position: relative;
+  height: 391px;
+}
+
+/* line 1537, ../../source/css/scss/Events/_page.scss */
+.tribe-events-content article {
+  padding: 0 0.5em 1em;
+}
+
+/* line 1541, ../../source/css/scss/Events/_page.scss */
+.tribe-wrapper-aside {
+  float: right;
+  width: 30%;
+  background-color: #dfefc3;
+}
+
+@media all and (max-width: 677px) {
+  /* line 1548, ../../source/css/scss/Events/_page.scss */
+  .tribe-single-event-main {
+    width: 100%;
+  }
+
+  /* line 1551, ../../source/css/scss/Events/_page.scss */
+  .tribe-single-event-intro-image {
+    width: 100%;
+    height: 391px;
+  }
+
+  /* line 1555, ../../source/css/scss/Events/_page.scss */
+  .tribe-events-content article {
+    padding: 0 2em 1em;
+  }
+
+  /* line 1559, ../../source/css/scss/Events/_page.scss */
+  .tribe-wrapper-aside {
+    width: 100%;
+  }
+}

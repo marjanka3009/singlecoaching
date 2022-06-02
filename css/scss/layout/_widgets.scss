@@ -1,0 +1,23 @@
+.widget-area .widget {
+    clear: both;
+
+}
+
+.widget-area .widget:first-child h2 {
+    margin-top:.93em;
+    font-size:1.5em;
+    margin-bottom:1em;  
+}
+
+.search-form {
+    display: block;
+    overflow:hidden;
+    max-height:none;   
+}
+
+input.search-field {
+    width: 100%;
+
+}
+
+

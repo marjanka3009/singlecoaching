@@ -1,0 +1,78 @@
+@import "scss/base/variables";
+@import "scss/base/mixins";
+
+@import "scss/wp_blocks/wp-block-library";
+@import "scss/objects/pb-accordion-blocks-style";
+@import "scss/objects/contact-form-7";
+
+@import "scss/objects/lists";
+@import "scss/objects/text";
+@import "scss/objects/media";
+@import "scss/objects/icons";
+// @import "scss/objects/buttons";
+@import "scss/objects/blocks";
+@import "scss/objects/comments";
+// @import "scss/objects/messaging";
+
+// @import "scss/tribe-events/tribe-events";
+// @import "scss/objects/wc-blocks-style";
+// @import "scss/objects/wc-blocks-vendors-style";
+@import "scss/objects/wcpa-frontend";
+
+tr.woocommerce-cart-form__cart-item > td > a > img {display: none;}
+.coupon, .cart-collaterals {
+	margin-top: 1em;
+}
+
+tr.woocommerce-cart-form__cart-item > td, tr.cart_item > td {padding-right: 0.5em;}
+label {display: block;}
+span.woocommerce-input-wrapper input, span.woocommerce-input-wrapper textarea {
+	display: block;
+	width: 100%;
+}
+
+dl.variation, dd.variation-Telefoonnummer, .wc-item-meta {display: none;}
+
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+    background-color: $groen;
+    color: $grijs;
+    -webkit-font-smoothing: antialiased;
+    &:hover, &:focus, &:active {
+    	background-color: $grijs;
+    }
+}
+
+/* woocommerce buttons */
+a.button, 
+button.button, 
+input.button, 
+#review_form #submit {
+    background:$groen; 
+}
+
+// comments
+
+
+
+
+#comments.comments-area h2.comments-title {
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+
+
+.tribe-events-calendar-list__event-wrapper.tribe-common-g-col {
+    margin-top: 0.25rem;
+
+}
+
+
+
+a.tribe-events-widget-events-list__event-title-link.tribe-common-anchor-thin {
+    font-size: 0.9rem;
+}
+
+.reply {padding-bottom: 1.5em;}
+
+
+

@@ -1,0 +1,16 @@
+html {
+    font: 100%/1.5 $font;
+    -webkit-text-size-adjust: 100%; /* 2 */
+    background: $zand url(../images/homepage.jpg) repeat-y;
+    // background: $wit;
+    -webkit-text-size-adjust: 100%;
+    color: $grijs;
+    font-family: $font;
+
+}
+body, .site, .wrapper, header, .site-content, footer {
+    background-color: $wit;  
+    max-width: $max-width;
+    margin: 0 auto;
+    box-sizing: border-box; 
+}

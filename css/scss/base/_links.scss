@@ -1,0 +1,34 @@
+a {
+	color:$grijs;	
+}
+
+a:visited {
+	color:#666;	
+}
+
+a:hover,a:focus,a:active {
+	color:#A0CE4E;	
+}
+
+a:focus {
+	outline:thin dotted;	
+}
+
+a:hover,a:active {
+	outline:0;	
+}
+
+
+
+a {
+    background-color:transparent;   
+}
+
+
+
+a {
+	text-decoration:underline;	
+}
+
+
+a:visited, a:active {color: #333;}

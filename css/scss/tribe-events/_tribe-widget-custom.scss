@@ -1,0 +1,31 @@
+.tribe-events-widget-events-list__event-date-tag.tribe-common-g-col {
+	// display:none;
+}
+
+.tribe-events-widget-events-list__event-wrapper.tribe-common-g-col {
+	margin: 1.5em auto;
+}
+
+.tribe-events-widget-events-list__event-datetime, .tribe-events-widget-events-list__events a {
+	font-size: 90%;
+	font-family: $font-secondary;
+
+}
+.tribe-events-widget-events-list__event-datetime {
+	color: #000;
+}
+
+
+ol.comment-list {list-style: none; 
+margin-left: 0;}
+
+ol.children {
+    list-style: none;
+    margin-left: 2em;
+}
+
+.reply {
+	margin-top: -0.5em;
+	margin-bottom: 1em;
+
+}

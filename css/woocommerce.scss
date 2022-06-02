@@ -1,0 +1,187 @@
+@import "scss/base/variables";
+@import "scss/base/mixins";
+@import "scss/objects/shop/tables";
+@import "scss/objects/shop/products";
+@import "scss/objects/shop/single-product";
+@import "scss/objects/shop/checkout";
+@import "scss/objects/shop/components";
+@import "scss/objects/shop/widgets";
+
+
+
+.single .fusion-sharing-box {
+    margin-top:-0;
+}
+.single .comments-container {
+    margin-top:0;
+}
+
+.shipping-coupon {display:none;}
+.cart-collaterals, .cart_totals {display:block;
+    width: 100%!important;}
+.coupon > button, .coupon > label {clear:both;display:block;}
+
+h2.promo-code-heading {display:none;}
+
+
+
+.sku_wrapper {display:none;}
+
+span.select2.select2-container.select2-container--default.select2-container--focus.select2-container--below.select2-container--open{width: 500px;}
+
+.callout  {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin:1em auto;
+    text-align: center;
+    padding: 0.7em;
+    border-bottom: 1px solid #a0ce4e;
+        border-top: 1px solid #a0ce4e;
+    
+}
+.callout-button {
+    margin:1.5em auto;
+    font-size: 1.2em;
+    font-weight:700;
+    text-align: center;
+
+}
+
+.embed-container { 
+  position: relative; 
+  padding-bottom: 56.25%; 
+  height: 0; 
+  overflow: hidden; 
+  max-width: 100%; 
+  width: 75%; 
+  height: 75%; 
+  margin-left:auto;
+  margin-right: auto;
+}
+
+
+.single .fusion-sharing-box {
+    margin-top:-0;
+}
+.single .comments-container {
+    margin-top:0;
+}
+
+.shipping-coupon {display:none;}
+.cart-collaterals, .cart_totals {display:block;
+    width: 100%!important;}
+.coupon > button, .coupon > label {clear:both;display:block;}
+
+h2.promo-code-heading {display:none;}
+
+#lcp_instance_0 > li > a:nth-child(1) {
+    font-weight: 500;
+    font-size: 120%;
+}
+
+
+.woocommerce-message, .woocommerce-info, .woocommerce-error, .woocommerce-noreviews, p.no-comments {
+
+    content: "";
+    display: table;
+    table-layout: fixed;
+    background-color: #fff;
+    clear: both;
+
+}
+
+
+
+.cart-icon {
+background-image: url('https://singlecoaching.nl/wp-content/uploads/2020/03/icons8-shopping-cart-24.png');
+background-repeat: no-repeat;
+background-position: left;
+padding-left: 0;
+	margin-left: 1em;
+}
+
+
+
+.stock.in-stock {
+
+    color: #333;
+
+}
+
+.wc-item-meta, #geslacht_field, .variation {display:none;}
+ul.woocommerce-error {
+
+    list-style: none;
+    color: red;
+
+}
+
+li.wpmenucartli a.wpmenucart-contents span {
+    display: none !important;
+}
+
+
+.sku_wrapper {display:none;}
+
+
+.callout  {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin:1em auto;
+    text-align: center;
+    padding: 0.7em;
+    border-bottom: 1px solid #a0ce4e;
+        border-top: 1px solid #a0ce4e;
+    
+}
+.callout-button {
+    margin:1.5em auto;
+    font-size: 1.2em;
+    font-weight:700;
+    text-align: center;
+
+}
+
+.embed-container { 
+  position: relative; 
+  padding-bottom: 56.25%; 
+  height: 0; 
+  overflow: hidden; 
+  max-width: 100%; 
+  width: 75%; 
+  height: 75%; 
+  margin-left:auto;
+  margin-right: auto;
+}
+
+
+// .wc-single_product_summary section.related.products {
+
+//     clear: both;
+//     display: none;
+//     width: 100%;
+//     float: none;
+
+// }
+
+
+// .wc-single_product_summary section.related.products {
+//     clear: both;
+//     display: none;
+//     width: 100%;
+//     float: none;
+// }
+
+
+
+// .wc-forward {
+//     border-bottom: 1px solid #fff;
+//     padding: 0.25em;
+//     margin-bottom: -0em;
+//     text-decoration: none;
+// }
+
+
+
+// .button, #submit {
+// }

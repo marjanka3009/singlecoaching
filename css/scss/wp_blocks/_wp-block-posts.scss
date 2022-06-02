@@ -1,0 +1,113 @@
+.wp-block-latest-posts.alignleft {
+	margin-right:2em
+}
+.wp-block-latest-posts.alignright {
+	margin-left:2em
+}
+.wp-block-latest-posts.wp-block-latest-posts__list {
+	list-style:none;padding-left:0
+}
+.wp-block-latest-posts.wp-block-latest-posts__list li {
+	clear:both
+}
+.wp-block-latest-posts.is-grid {
+	display:flex;flex-wrap:wrap;padding:0
+}
+.wp-block-latest-posts.is-grid li {
+	margin:0 1.25em 1.25em 0;width:100%
+}
+@media (min-width:600px) {
+	.wp-block-latest-posts.columns-2 li {
+	width:calc(50% - .625em)
+}
+.wp-block-latest-posts.columns-2 li:nth-child(2n) {
+	margin-right:0
+}
+.wp-block-latest-posts.columns-3 li {
+	width:calc(33.33333% - .83333em)
+}
+.wp-block-latest-posts.columns-3 li:nth-child(3n) {
+	margin-right:0
+}
+.wp-block-latest-posts.columns-4 li {
+	width:calc(25% - .9375em)
+}
+.wp-block-latest-posts.columns-4 li:nth-child(4n) {
+	margin-right:0
+}
+.wp-block-latest-posts.columns-5 li {
+	width:calc(20% - 1em)
+}
+.wp-block-latest-posts.columns-5 li:nth-child(5n) {
+	margin-right:0
+}
+.wp-block-latest-posts.columns-6 li {
+	width:calc(16.66667% - 1.04167em)
+}
+.wp-block-latest-posts.columns-6 li:nth-child(6n) {
+	margin-right:0
+}
+
+}
+.wp-block-latest-posts__post-author,.wp-block-latest-posts__post-date {
+	display:block;color:#555;font-size:.8125em
+}
+.wp-block-latest-posts__post-excerpt {
+	margin-top:.5em;margin-bottom:1em
+}
+.wp-block-latest-posts__featured-image a {
+	display:inline-block
+}
+.wp-block-latest-posts__featured-image img {
+	height:auto;width:auto;max-width:100%
+}
+.wp-block-latest-posts__featured-image.alignleft {
+	margin-right:1em
+}
+.wp-block-latest-posts__featured-image.alignright {
+	margin-left:1em
+}
+.wp-block-latest-posts__featured-image.aligncenter {
+	margin-bottom:1em;text-align:center
+}
+.wp-block-post-author {
+	display:flex;flex-wrap:wrap
+}
+.wp-block-post-author__byline {
+	width:100%;margin-top:0;margin-bottom:0;font-size:.5em
+}
+.wp-block-post-author__avatar {
+	margin-right:1em
+}
+.wp-block-post-author__bio {
+	margin-bottom:.7em;font-size:.7em
+}
+.wp-block-post-author__content {
+	flex-grow:1;flex-basis:0
+}
+.wp-block-post-author__name {
+	font-weight:700;margin:0
+}
+.wp-block-post-excerpt__more-link,.wp-block-post-title a {
+	display:inline-block
+}
+
+// uitzoeken
+
+.ab-block-post-grid .is-list .ab-block-post-grid-title, .ab-block-post-grid .ab-is-list .ab-block-post-grid-title {
+    font-size: 1.2em;
+}
+
+.ab-block-post-grid .ab-block-post-grid-more-link {
+
+    display: inline-block;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+    font-weight: normal;
+    color: #293038;
+    text-decoration: underline;
+
+}

@@ -1,0 +1,70 @@
+ol.wp-block-latest-comments {
+	margin-left:0
+}
+.wp-block-latest-comments .wp-block-latest-comments {
+	padding-left:0
+}
+.wp-block-latest-comments__comment {
+	line-height:1.1;list-style:none;margin-bottom:1em
+}
+.has-avatars .wp-block-latest-comments__comment {
+	min-height:2.25em;list-style:none
+}
+.has-avatars .wp-block-latest-comments__comment .wp-block-latest-comments__comment-excerpt,.has-avatars .wp-block-latest-comments__comment .wp-block-latest-comments__comment-meta {
+	margin-left:3.25em
+}
+.has-dates .wp-block-latest-comments__comment,.has-excerpts .wp-block-latest-comments__comment {
+	line-height:1.5
+}
+.wp-block-latest-comments__comment-excerpt p {
+	font-size:.875em;line-height:1.8;margin:.36em 0 1.4em
+}
+.wp-block-latest-comments__comment-date {
+	display:block;font-size:.75em
+}
+.wp-block-latest-comments .avatar,.wp-block-latest-comments__comment-avatar {
+	border-radius:1.5em;display:block;float:left;height:2.5em;margin-right:.75em;width:2.5em
+}
+.wp-block-post-comments .commentlist {
+	list-style:none;margin:0;padding:0
+}
+.wp-block-post-comments .commentlist .comment {
+	min-height:2.25em;padding-left:3.25em
+}
+.wp-block-post-comments .commentlist .comment p {
+	font-size:.875em;line-height:1.8;margin:.36em 0 1.4em
+}
+.wp-block-post-comments .commentlist .children {
+	list-style:none;margin:0;padding:0
+}
+.wp-block-post-comments .comment-author {
+	line-height:1.5;margin-left:-3.25em
+}
+.wp-block-post-comments .comment-author .avatar {
+	border-radius:1.5em;display:block;float:left;height:2.5em;margin-right:.75em;width:2.5em
+}
+.wp-block-post-comments .comment-author cite {
+	font-style:normal
+}
+.wp-block-post-comments .comment-meta {
+	line-height:1.5;margin-left:-3.25em
+}
+.wp-block-post-comments .comment-body .commentmetadata {
+	font-size:.75em
+}
+.wp-block-post-comments .comment-form-author label,.wp-block-post-comments .comment-form-comment label,.wp-block-post-comments .comment-form-email label,.wp-block-post-comments .comment-form-url label {
+	display:block
+}
+.wp-block-post-comments .comment-form-comment textarea {
+	box-sizing:border-box;width:100%
+}
+.wp-block-post-comments .reply {
+	font-size:.75em;margin-bottom:1.4em
+}
+.wp-block-post-comments input,.wp-block-post-comments textarea {
+	border:1px solid #949494
+}
+.wp-block-post-comments-form input[type=submit] {
+	border:none;box-shadow:none;cursor:pointer;display:inline-block;text-align:center;overflow-wrap:break-word
+}
+

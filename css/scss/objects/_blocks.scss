@@ -1,0 +1,196 @@
+.grote-knop {
+	background-color: #b7df53;
+	background-image: url("http://localhost/Singlecoaching/wp-content/uploads/2020/10/pijltje-test-e1603892650222.png");
+background-repeat: no-repeat;
+	background-position: left 32px;
+	border-radius: 12px;
+	padding: 1.5em 1em 1em 6em;
+
+	margin: 0.5em 1em 1em 0;
+}
+.grote-knop-par {
+padding-top: 3px;
+font-size: 1.1em;
+margin-bottom: 0;
+color: #000;
+}
+.grote-knop-h2 {
+	font-size: 1.5em;	
+	color: #000;
+	margin-top: 12px;
+}
+.grote-knop-h2 a {
+	text-decoration: none;
+
+	
+}
+	.grote-knop-h21 {
+		font-size: 1.2em;	
+		color: #000;
+
+	}
+	.grote-knop-h21 a, .grote-knop-h21 a:visited {
+		text-decoration: none;
+		color: black;
+		font-weight: normal;
+		
+	}
+	.grote-knop-text1 a {
+		text-decoration: none;
+
+	}
+
+
+.grote-knop1 {
+	background-color: #b7df53;
+	background-repeat: no-repeat;
+/*		background-position: left 32px;
+*/		border-radius: 12px;
+/*		padding: 1.5em 1em 1em 6em;
+*/		margin: 0.5em 1em 1em 0;
+	display: flex;
+	align-items: center;
+	padding: 1.3em;
+}
+.grote-knop-img1 {
+/*		position: absolute;
+	top: 50%;*/
+	margin-left: -1.5em;
+	margin-right: 1em;
+	min-width: 83px;
+
+}
+
+.grote-knop-par1 {
+	color: #000;
+	display: block;
+	margin-bottom: -1em;
+}
+.grote-knop-par1 a, .grote-knop-par1 a:visited {
+	text-decoration: none;
+	
+}
+.grote-knop-h21 {
+	font-size: 1.2em;	
+	color: #000;
+
+}
+.grote-knop-h21 a, .grote-knop-h21 a:visited {
+	text-decoration: none;
+	color: black;
+	font-weight: normal;
+	
+}
+.grote-knop-text1 a {
+	text-decoration: none;
+
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  margin: 1em -0.75em;
+}
+
+
+.card {
+
+
+  flex: 0 0 33.3%; 
+  padding:0.75em; 
+  box-sizing: border-box;
+  h2 {
+    height: 48px;
+  }
+  @media all and (max-width: 650px) {
+    flex: 0 0 50%;
+  }
+
+  @media all and (max-width: 520px) {
+    flex:0 0 100%;
+  }
+
+}
+
+
+.card-header {
+  height: 3em;
+}
+.card-image {
+  height: 90px;
+  width: 100%;
+  background: gray;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 0.5em;
+}
+
+@media all and (max-width: 790px) {
+  .card-image {
+    height: 180px;
+    max-width: 350px;
+    float: left;
+    margin: 0 1em 1em 0;
+  }
+}
+@media all and (max-width: 576px) {
+  .card-image {
+    max-width: 100%;
+    height: 180px;
+    float: none;
+  }
+}
+
+.card-beschrijving > p {
+  margin-top:0.5em;
+  margin-bottom: 0em;
+}
+.card-excerpt { //bij page-testimonial
+
+}
+
+.card-leesmeer {
+  margin-bottom: 1.5em;
+}
+
+.lcp_catlist > li {
+    list-style-type:none;
+    margin-left: -2.5em;
+    display: block;
+    clear: both;
+    overflow: auto;
+}
+.lcp_catlist > li > a {
+
+}
+.lcp_catlist > li > a:before {
+    content: "";
+    display: block;
+
+}
+
+.lcp_catlist > li > a > img {
+    float:left;
+    margin-right: 1em;
+    margin-bottom: 1em;
+
+}
+#lcp_instance_0 > li > a:nth-child(1) {
+    font-weight: 500;
+    font-size: 120%;
+}
+
+
+
+
+
+
+.praktijkverhaal {
+    border: 1px solid $groen;
+    background: $zand;
+    border-radius: 8px;
+    padding: 1em 1em 0;
+    margin-bottom: 1.5em;
+}

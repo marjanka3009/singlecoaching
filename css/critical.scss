@@ -1,0 +1,21 @@
+@import "scss/base/variables";
+@import "scss/base/mixins";
+@import "scss/base/global-classes";
+@import "scss/base/links";
+@import "scss/base/headings";
+@import "scss/base/animation";
+@import "scss/base/accessibility";
+
+@import "scss/layout/layout";
+@import "scss/layout/body";
+@import "scss/layout/header";
+@import "scss/layout/nav";
+@import "scss/layout/page";
+@import "scss/layout/content";
+@import "scss/layout/widgets";
+@import "scss/layout/footer";
+
+@import "scss/objects/events/events";
+
+@import 'scss/wp_blocks/wp-block-image';
+@import 'scss/wp_blocks/wp-block-button';

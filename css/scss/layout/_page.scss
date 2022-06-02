@@ -1,0 +1,32 @@
+.content-area-nosidebar, [role=main] {
+  max-width: 55em;
+  margin: 0 auto;
+  padding: 0.5em;
+}
+
+.content-area, .widget-area {
+  width: 100%;
+  background-color: $wit;
+  box-sizing: border-box; 
+
+}
+
+.widget-area {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+@media all and (min-width: 790px) {
+  .content-area, .widget-area{
+    float: left;
+    margin-top: 2.5em;
+  } 
+  .content-area {
+    width: 70%;
+  }
+  .widget-area {
+    width: 30%;
+  }
+}
+
+

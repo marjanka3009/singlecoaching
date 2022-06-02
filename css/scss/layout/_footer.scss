@@ -1,0 +1,17 @@
+.site-footer {
+	clear:both;
+	color:Sgrijs;
+	padding:1.5em 1.5em 0.5em;
+	background:$groen;
+	margin-bottom: 0;
+
+	a {
+		color: $grijs;
+	}
+}
+
+.copyright {
+	@media all and (min-width: $bp-med) {
+		float: right;
+	}
+}

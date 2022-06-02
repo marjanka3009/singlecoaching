@@ -1,0 +1,41 @@
+img, video, object {
+    border-style:none;  
+    height:auto;
+    max-width:100%; 
+}
+
+figure {
+    margin:1em 0;  
+	max-width: 100%;
+	height: auto;
+}
+figure {
+    img {
+        margin-bottom: 0.5em;
+    }
+}
+
+figcaption {
+	font-style: italic;
+}
+
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+.img-round {border-radius: 50%; margin-top:0;}
+
+.caption-youtube {
+    margin-top: -1.5em;
+    margin-bottom: 2em;
+}
+
+img.contact-foto {
+	width:30%;	
+}
+
+iframe {
+    margin-bottom:1em;  
+}

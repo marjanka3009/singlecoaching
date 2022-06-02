@@ -1,0 +1,65 @@
+
+body,button,input,select,optgroup,textarea {
+    color:$grijs;
+    font-family:"open_sansregular",sans-serif;
+    font-size:16px;
+    font-size:1rem;
+    line-height:1.5;
+    -webkit-text-size-adjust:100%;  
+}
+
+/* Completely remove from the flow and screen readers. */
+// .is-hidden {
+//     display: none !important;
+//     visibility: hidden !important;
+// }
+
+/* Completely remove from the flow but leave available to screen readers. */
+// .is-vishidden {
+//     position: absolute !important;
+//     overflow: hidden;
+//     width: 1px;
+//     height: 1px;
+//     padding: 0;
+//     border: 0;
+//     clip: rect(1px, 1px, 1px, 1px);
+// }
+
+
+
+// .animate-fade {
+//     -webkit-transition:opacity 0.3s ease-out;
+//     -moz-transition:opacity 0.3s ease-out;
+//     -ms-transition:opacity 0.3s ease-out;
+//     -o-transition:opacity 0.3s ease-out;
+//     transition:opacity 0.3s ease-out;   
+// }
+
+// .animate-fade:hover {
+//     opacity:0;  
+// }
+
+[hidden] {
+    display:none;   
+}
+// template {
+//     display: none;
+// }
+
+// .display-none {
+//     display: none;
+// }
+
+// .padding-bottom {
+//     padding-bottom: 1em;
+// }
+
+// .alignnone {margin-bottom:0.5em;}
+
+// @media only screen and (max-width: 800px) {
+//     .alignsidbar {
+//         margin-left: auto;
+//               margin-right: auto;
+//     }
+// }
+

@@ -1,0 +1,152 @@
+.wp-block-button__link, input[type="button"], input[type="reset"], input[type="submit"], a.button, .single_add_to_cart_button, button, button.button {
+	color:$grijs;
+	background-color:$groen;
+	border-radius:4px;
+	box-shadow:none;
+	cursor:pointer;
+	display:inline-block;
+	font-size:1.125em;
+	padding:0.5em 1em;
+	margin-bottom: 0.75em;
+	text-align:center;
+	text-decoration:none;
+	overflow-wrap:break-word;
+	box-sizing:border-box;
+
+	&:hover, &:active, &:focus {
+		background-color: $grijs;
+		color: #fff;
+
+	}
+}
+
+
+.wp-block-button__link.aligncenter {
+	text-align:center
+}
+.wp-block-button__link.alignright {
+	text-align:right
+}
+.wp-block-buttons>.wp-block-button.has-custom-width {
+	max-width:none
+}
+.wp-block-buttons>.wp-block-button.has-custom-width .wp-block-button__link {
+	width:100%
+}
+.wp-block-buttons>.wp-block-button.has-custom-font-size .wp-block-button__link {
+	font-size:inherit
+}
+.wp-block-buttons>.wp-block-button.wp-block-button__width-25 {
+	width:calc(25% - .5em)
+}
+.wp-block-buttons>.wp-block-button.wp-block-button__width-50 {
+	width:calc(50% - .5em)
+}
+.wp-block-buttons>.wp-block-button.wp-block-button__width-75 {
+	width:calc(75% - .5em)
+}
+.wp-block-buttons>.wp-block-button.wp-block-button__width-100 {
+	width:calc(100% - .5em)
+}
+.wp-block-buttons>.wp-block-button.wp-block-button__width-100:only-child {
+	margin-right:0;width:100%
+}
+@supports (column-gap:0.5em) {
+	.wp-block-buttons.is-content-justification-right>.wp-block-button.wp-block-button,
+	.wp-block-buttons>.wp-block-button.wp-block-button {
+		margin-right:0;margin-left:0
+	}
+}
+.wp-block-buttons>.wp-block-button.wp-block-button__width-25 {
+	width:calc(25% - .375em)
+}
+.wp-block-buttons>.wp-block-button.wp-block-button__width-50 {
+	width:calc(50% - .25em)
+}
+.wp-block-buttons>.wp-block-button.wp-block-button__width-75 {
+	width:calc(75% - .125em)
+}
+.wp-block-buttons>.wp-block-button.wp-block-button__width-100 {
+	width:auto;flex-basis:100%
+}
+.wp-block-button.is-style-squared,.wp-block-button__link.wp-block-button.is-style-squared {
+	border-radius:0
+}
+.wp-block-button.no-border-radius,.wp-block-button__link.no-border-radius {
+	border-radius:0!important
+}
+.is-style-outline>.wp-block-button__link,.wp-block-button__link.is-style-outline {
+	border:2px solid;padding:.667em 1.333em
+}
+.is-style-outline>.wp-block-button__link:not(.has-text-color),.wp-block-button__link.is-style-outline:not(.has-text-color) {
+	color:currentColor
+}
+.is-style-outline>.wp-block-button__link:not(.has-background),.wp-block-button__link.is-style-outline:not(.has-background) {
+	background-color:transparent
+}
+.wp-block-buttons {
+	display:flex;flex-direction:row;flex-wrap:wrap;column-gap:.5em
+}
+.wp-block-buttons.is-vertical {
+	flex-direction:column
+}
+.wp-block-buttons.is-vertical>.wp-block-button {
+	margin-right:0
+}
+.wp-block-buttons.is-vertical>.wp-block-button:last-child {
+	margin-bottom:0
+}
+.wp-block-buttons>.wp-block-button {
+	display:inline-block;margin-left:0;margin-right:.5em;margin-bottom:.5em
+}
+.wp-block-buttons>.wp-block-button:last-child {
+	margin-right:0
+}
+.wp-block-buttons.is-content-justification-left {
+	justify-content:flex-start
+}
+.wp-block-buttons.is-content-justification-left.is-vertical {
+	align-items:flex-start
+}
+.wp-block-buttons.is-content-justification-center {
+	justify-content:center
+}
+.wp-block-buttons.is-content-justification-center.is-vertical {
+	align-items:center
+}
+.wp-block-buttons.is-content-justification-right {
+	justify-content:flex-end
+}
+.wp-block-buttons.is-content-justification-right>.wp-block-button {
+	margin-left:.5em;margin-right:0
+}
+.wp-block-buttons.is-content-justification-right>.wp-block-button:first-child {
+	margin-left:0
+}
+.wp-block-buttons.is-content-justification-right.is-vertical {
+	align-items:flex-end
+}
+.wp-block-buttons.is-content-justification-space-between {
+	justify-content:space-between
+}
+.wp-block-buttons.aligncenter {
+	text-align:center
+}
+.wp-block-buttons.alignleft .wp-block-button {
+	margin-left:0;margin-right:.5em
+}
+.wp-block-buttons.alignleft .wp-block-button:last-child {
+	margin-right:0
+}
+.wp-block-buttons.alignright .wp-block-button {
+	margin-right:0;margin-left:.5em
+}
+.wp-block-buttons.alignright .wp-block-button:first-child {
+	margin-left:0
+}
+.wp-block-buttons:not(.is-content-justification-space-between,.is-content-justification-right,.is-content-justification-left,.is-content-justification-center) .wp-block-button.aligncenter {
+	margin-left:auto;margin-right:auto;margin-bottom:.5em;width:100%
+}
+.wp-block-button.aligncenter,.wp-block-calendar {
+	text-align:center
+}
