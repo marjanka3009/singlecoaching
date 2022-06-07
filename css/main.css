@@ -11,3 +11,9 @@
   flex: 0 0 100%;
   margin: 0 auto;
 }
+
+.card-image-testimonial {
+  min-height: 190px;
+  background-size: cover;
+
+}

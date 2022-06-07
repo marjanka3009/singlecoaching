@@ -19,7 +19,14 @@
 
 /* --------------------- */
 get_header( 'nothumbs' ); ?>
+<style>
+	.card-image-testimonial {
+  min-height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
 
+}
+ </style>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
@@ -52,7 +59,7 @@ get_header( 'nothumbs' ); ?>
 						}
 						?>
 						</h2>
-						<div class="card-image" style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>);"></div>
+						<img src="<?php the_field( 'foto-crop'); ?>" alt="" class="card-image">
 						<div class="card-excerpt"><?php echo get_the_excerpt() ?></div>
 			      	<div class="card-leesmeer">Lees: <a href="<?php the_permalink() ?>"><?php the_title(); ?></a></div>				
 					</div>
